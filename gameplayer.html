@@ -1,3 +1,9 @@
+<!--
+This is the new game player
+
+Don't stare at the code.
+-->
+<!DOCTYPE html>
 <html>
 <script>
 //var url_string = "http://www.example.com/t.html?a=1&b=3&c=m2-m3-m4-m5"; //window.location.href
@@ -5,9 +11,23 @@ var url_string = window.location.href
 var url = new URL(url_string);
 var c = url.searchParams.get("c");
 console.log(c);
-if (c = "strikeforceheroes") {
-	console.log("starting strike force heroes");
+var url1 = window.location.href
+var res = url1.split("?");
+console.log(res);
+console.log(res[1])
+if (res[1] = "game=strikeforceheroes"){
+	console.log("cool cash")
 }
 console.log(window.location.href);
 </script>
+<body>
+<p></p>
+</body>
 </html>
+
+<!--
+if( url1.indexOf('test1') !== -1){
+  // Found world
+  console.log("WOW1");
+}
+-->
