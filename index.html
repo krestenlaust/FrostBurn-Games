@@ -14,15 +14,36 @@ here
 </head>
 <body>
 <a href="gamelist.html">Game List</a>
+<p>.</p>
+<p>If you're staying on this site for awhile then vvv</p>
+<input type="button" value="Start audio player" onclick="popitup2();">
+<script>
+function popitup2() {
+	console.log("Creating audio player window")
+	newwindow2=window.open('','name','height=200,width=400');
+	var tmp = newwindow2.document;
+	tmp.write('<html><head><title>FrostBurn Audio player</title>');
+	tmp.write('<link rel="stylesheet" href="js.css">');
+	tmp.write('</head><body><p>This is FrostBurn audio player.</p>');
+	tmp.write('<p>You can minimize the window to keep focus on your game :-D or:</p>')
+	tmp.write('<p><a href="javascript:self.close()">Close</a> the popup.</p>');
+	tmp.write('<audio controls>');
+	tmp.write('<source src="audio/StrikeForceHeroesOSTMainMenuTheme.mp3" type="audio/mpeg">')
+	tmp.write('<source src="audio/OriginalGhostBustersThemeSong.mp3" type="audio/mpeg">')
+	tmp.write('</audio>')
+	tmp.write('</body></html>');
+	tmp.close();
+}
+</script>
+
 </body>
 </html>
 
 <!-- 
 <iframe src="games/strikeforceheroes.html" name="targetframe" allowTransparency="true" scrolling="no" frameborder="0" >
     </iframe>
--->	
 
-<!--
+
 <button onclick="strikeforceheroes()">Strike Force Heroes</button>
 <script>
 function strikeforceheroes() {
