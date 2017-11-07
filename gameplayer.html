@@ -43,15 +43,39 @@ border: 1px solid black;
   <div id="gameplayer"></div> <!-- This is the function that gets changed with url parameter -->
 
   <body>
+<!--
     <a href="index.html">Return to menu</a>
     <a href="gamelist.html">Return to gamelist</a>
-    <input type="image" src="images/full-screen.png" /> <!--Full screen button-->
+    <input type="image" src="images/full-screen.png" /> -->
+    <input id="return to menu" type="button" value="Return to Menu" onclick="returnm();" />
+    <input id="return to gamelist" type="button" value="Return to Gamelist" onclick="returngl();" />
+    <input id="toggle header" type="button" value="Toggle Header" onclick="toggleheader();" />
+    <input id="fullscreen" type="button" value="Full-Screen WIP" onclick="fullscreen();" />
+
     <div id=description></div> <!-- This generates a discription -->
     <div id="footer">
     	<p><b><a href="https://github.com/kres0345/FrostBurn-Games/issues/new">Request a game?</a></b> or <b><a href="https://github.com/kres0345/FrostBurn-Games/issues/new">Report an error</a></b> website created by kres0345</p>
     </div>
   </body>
-
+  <script>
+    function toggleheader() {
+    var x = document.getElementById("header");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+    }
+    function returngl() {
+      window.location.href = "gamelist.html";
+    }
+    function returnm() {
+      window.location.href = "index.html";
+    }
+    function fullscreen() {
+      console.log("Coming soon")
+    }
+  </script>
   <script>
   var runcorrect = false
   var url1 = window.location.href

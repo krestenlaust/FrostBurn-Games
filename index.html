@@ -53,6 +53,7 @@ div.sticky {
   </head>
 
   <body>
+    <input id="toggle header" type="button" value="Toggle Header" onclick="toggleheader();" />
     <a href="gamelist.html">Game List</a>
     <p>.</p>
     <div>
@@ -63,6 +64,14 @@ div.sticky {
     	<p><b><a href="https://github.com/kres0345/FrostBurn-Games/issues/new">Request a game?</a></b> or <b><a href="https://github.com/kres0345/FrostBurn-Games/issues/new">Report an error</a></b> website created by kres0345</p>
     </div>
     <script>
+    function toggleheader() {
+    var x = document.getElementById("header");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+    }
     function popitup2() {
     	console.log("Creating audio player window")
     	newwindow2=window.open('','name','height=200,width=400');
