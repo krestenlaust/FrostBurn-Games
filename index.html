@@ -48,13 +48,16 @@ div.sticky {
   <head>
     <div class="sticky" id="header">
       <input type="image" src="logoVersion2.png" onclick="returnm();" style="width:50px;height:50px;float: left" />
-      <p><b>FrostBurn Games</b></p>
+      <p><b>Welcome to FrostBurn Games</b></p>
     </div>
   </head>
 
   <body>
     <input id="toggle header" type="button" value="Toggle Header" onclick="toggleheader();" />
-    <a href="gamelist.html">Game List</a>
+    <p>.</p>
+    <p>vvv To start playing click "Gamelist" vvv</p>
+    <input id="gamelistbutton" type="button" value="Gamelist" onclick="gamelist();" />
+    <!-- <a href="gamelist.html">Game List</a> -->
     <p>.</p>
     <div>
       <p>If you're staying on this site for awhile then vvv</p>
@@ -74,6 +77,9 @@ div.sticky {
     }
     function returnm() {
       window.location.href = "index.html";
+    }
+    function gamelist() {
+      window.location.href = "gamelist.html";
     }
     function popitup2() {
     	console.log("Creating audio player window")
