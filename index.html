@@ -47,8 +47,8 @@ div.sticky {
 
   <head>
     <div class="sticky" id="header">
-    	<img src="logoVersion2.png" alt="FrostBurn Games Logo" style="width:45px;height:45px;float: left;">
-    	<p><b>Welcome to FrostBurn Games</b></p>
+      <input type="image" src="logoVersion2.png" onclick="returnm();" style="width:50px;height:50px;float: left" />
+      <p><b>FrostBurn Games</b></p>
     </div>
   </head>
 
@@ -71,6 +71,9 @@ div.sticky {
     } else {
         x.style.display = "none";
     }
+    }
+    function returnm() {
+      window.location.href = "index.html";
     }
     function popitup2() {
     	console.log("Creating audio player window")
