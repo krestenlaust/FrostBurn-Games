@@ -28,75 +28,78 @@ border: 1px solid black;
 }
 </style>
 <html>
-<head>
-	<div id="header" class="sticky">
-	<img src="logoVersion2.png" alt="FrostBurn Games Logo" style="width:45px;height:45px;float: left;">
-	<p><b>Welcome to FrostBurn Games</b></p>
-	</div>
-</head>
-<link rel="icon" href="logoVersion2.png" type="image/x-icon"/>
-<title>Gameplayer - FrostBurn Games</title>
-<div id="title">
-	<h1>Game player</h1>
-</div>
-<div id="gameplayer"></div>
-<body>
-<a href="index.html">Return to menu</a>
-<a href="gamelist.html">Return to gamelist</a>
-<input type="image" src="images/full-screen.png" /> <!--Full screen button-->
-<div id=description></div>
-<div id="footer">
-	<p><b><a href="https://github.com/kres0345/FrostBurn-Games/issues/new">Request a game?</a></b> or <b><a href="https://github.com/kres0345/FrostBurn-Games/issues/new">Report an error</a></b> website created by kres0345</p>
-</div>
-</body>
-<script>
-var runcorrect = false
-var url1 = window.location.href
-var res = url1.split("?");
-var cp = res[1];
-if(cp=='game=strikeforceheroes'){
-	console.log("Loading Strike Force Heroes");
-	document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="games/swf/strike-force-heroes-13367.swf"></object>'
-	document.getElementById('description').innerHTML = "<p><b>This game is made by JuiceTin.</b> This game forms childhoods. It's amazing.</p>"
-	document.getElementById('title').innerHTML = '<h1>Strike Force Heroes</h1>'
-	var runcorrect = true
-}
-if(cp=='game=strikeforceheroes2'){
-	console.log("Loading Strike Force Heroes 2")
-	document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="games/swf/strike-force-heroes--14775.swf"></object>'
-	document.getElementById('title').innerHTML = '<h1>Strike Force Heroes 2</h1>'
-	document.getElementById('description').innerHTML = '<p><b>This game is made by JuiceTin.</b> This game is also a childhood forming game.</p>'
-	var runcorrect = true
-}
-if(cp=='game=strikeforceheroes3'){
-	console.log("Loading Strike Force Heroes 3")
-	document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="games/swf/strike-force-heroes--17706.swf"></object>'
-	document.getElementById('description').innerHTML = '<p><b>This game is made by JuiceTin.</b> This game is simply the last game. The last games are not always as good as the first 1.</p>'
-	document.getElementById('title').innerHTML = '<h1>Strike Force Heroes 3</h1>'
-	var runcorrect = true
-}
-if(cp=='game=stickfigurebadminton2'){
-	console.log("Loading Stick Figure Badminton 2")
-	document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="games/swf/StickBadmintonFinal.swf"></object>'
-	document.getElementById('description').innerHTML = '<p><b>This game is made by EffingGames.</b> Stick Figure Badminton 2 is a good game for 1v1 between friends.</p>'
-	document.getElementById('title').innerHTML = '<h1>Stick Figure Badminton 2</h1>'
-	var runcorrect = true
-}
-if(cp=='game=stickfigurebadminton3'){
-	console.log("Loading Stick Figure Badminton 3")
-	document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="games/swf/StickBadminton3Final.swf"></object>'
-	document.getElementById('description').innerHTML = '<p><b>This game is made by EffingGames.</b> Stick Figure Badminton 3 is a great game for an 1v1 between friends too.</p>'
-	document.getElementById('title').innerHTML = '<h1>Stick Figure Badminton 3</h1>'
-	var runcorrect = true
-}
-else{
-	if(runcorrect==false){
-		document.getElementById('title').innerHTML = '<h1>Error 404 game not found</h1>'
-		document.getElementById('description').innerHTML = '<p>If it wasnt you tampering with the url then please report the error: https://github.com/kres0345/FrostBurn-Games/issues</p>'
-	}
-}
-console.log(window.location.href);
-</script>
+  <head>
+    <div id="header" class="sticky">
+    	<img src="logoVersion2.png" alt="FrostBurn Games Logo" style="width:45px;height:45px;float: left;">
+      <p><b>Welcome to FrostBurn Games</b></p>
+    </div>
+  </head>
+
+  <link rel="icon" href="logoVersion2.png" type="image/x-icon"/>
+  <title>Gameplayer - FrostBurn Games</title>
+  <div id="title">
+  	<h1>Game player</h1>
+  </div>
+  <div id="gameplayer"></div> <!-- This is the function that gets changed with url parameter -->
+
+  <body>
+    <a href="index.html">Return to menu</a>
+    <a href="gamelist.html">Return to gamelist</a>
+    <input type="image" src="images/full-screen.png" /> <!--Full screen button-->
+    <div id=description></div> <!-- This generates a discription -->
+    <div id="footer">
+    	<p><b><a href="https://github.com/kres0345/FrostBurn-Games/issues/new">Request a game?</a></b> or <b><a href="https://github.com/kres0345/FrostBurn-Games/issues/new">Report an error</a></b> website created by kres0345</p>
+    </div>
+  </body>
+
+  <script>
+  var runcorrect = false
+  var url1 = window.location.href
+  var res = url1.split("?");
+  var cp = res[1];
+  if(cp=='game=strikeforceheroes'){
+  	console.log("Loading Strike Force Heroes");
+  	document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="games/swf/strike-force-heroes-13367.swf"></object>'
+  	document.getElementById('description').innerHTML = "<p><b>This game is made by JuiceTin.</b> This game forms childhoods. It's amazing.</p>"
+  	document.getElementById('title').innerHTML = '<h1>Strike Force Heroes</h1>'
+  	var runcorrect = true
+  }
+  if(cp=='game=strikeforceheroes2'){
+  	console.log("Loading Strike Force Heroes 2")
+  	document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="games/swf/strike-force-heroes--14775.swf"></object>'
+  	document.getElementById('title').innerHTML = '<h1>Strike Force Heroes 2</h1>'
+  	document.getElementById('description').innerHTML = '<p><b>This game is made by JuiceTin.</b> This game is also a childhood forming game.</p>'
+  	var runcorrect = true
+  }
+  if(cp=='game=strikeforceheroes3'){
+  	console.log("Loading Strike Force Heroes 3")
+  	document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="games/swf/strike-force-heroes--17706.swf"></object>'
+  	document.getElementById('description').innerHTML = '<p><b>This game is made by JuiceTin.</b> This game is simply the last game. The last games are not always as good as the first 1.</p>'
+  	document.getElementById('title').innerHTML = '<h1>Strike Force Heroes 3</h1>'
+  	var runcorrect = true
+  }
+  if(cp=='game=stickfigurebadminton2'){
+  	console.log("Loading Stick Figure Badminton 2")
+  	document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="games/swf/StickBadmintonFinal.swf"></object>'
+  	document.getElementById('description').innerHTML = '<p><b>This game is made by EffingGames.</b> Stick Figure Badminton 2 is a good game for 1v1 between friends.</p>'
+  	document.getElementById('title').innerHTML = '<h1>Stick Figure Badminton 2</h1>'
+  	var runcorrect = true
+  }
+  if(cp=='game=stickfigurebadminton3'){
+  	console.log("Loading Stick Figure Badminton 3")
+  	document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="games/swf/StickBadminton3Final.swf"></object>'
+  	document.getElementById('description').innerHTML = '<p><b>This game is made by EffingGames.</b> Stick Figure Badminton 3 is a great game for an 1v1 between friends too.</p>'
+  	document.getElementById('title').innerHTML = '<h1>Stick Figure Badminton 3</h1>'
+  	var runcorrect = true
+  }
+  else{
+  	if(runcorrect==false){
+  		document.getElementById('title').innerHTML = '<h1>Error 404 game not found</h1>'
+  		document.getElementById('description').innerHTML = '<p>If it wasnt you tampering with the url then please report the error: https://github.com/kres0345/FrostBurn-Games/issues</p>'
+  	}
+  }
+  console.log(window.location.href);
+  </script>
 </html>
 
 <!--
