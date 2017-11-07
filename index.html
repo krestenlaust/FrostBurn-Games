@@ -7,17 +7,26 @@ div.sticky {
 	position: sticky;
 	top: 0;
 }
+
 #header {
 margin-left: 5%;
 margin-right: 5%;
 box-shadow: 3px 5px 7px #666666;
 border: 1px solid black;
+text-align: center;
 }
-#buttom {
+#footer {
 margin-left: 1%;
 margin-right: 1%;
 box-shadow: 3px 5px 7px #666666;
 border: 1px solid black;
+position: absolute;
+right: 0;
+bottom: 0;
+left: 0;
+padding: 3px;
+background-color: 3px 5px 7px #666666;
+text-align: center;
 }
 </style>
 <html>
@@ -35,6 +44,9 @@ border: 1px solid black;
 <div>
 <p>If you're staying on this site for awhile then vvv</p>
 <input type="button" value="Start audio player" onclick="popitup2();">
+</div>
+<div id="footer">
+	<p><b><a href="https://github.com/kres0345/FrostBurn-Games/issues/new">Request a game?</a></b> Site created by kres0345</p>
 </div>
 <script>
 function popitup2() {
@@ -54,9 +66,7 @@ function popitup2() {
 	tmp.close();
 }
 </script>
-<div id="buttom">
-	<p><b>Request a game</b></p>
-</div>
+
 </body>
 </html>
 
