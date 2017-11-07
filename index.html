@@ -3,20 +3,30 @@
 Insert ASCII art
 here
 -->
+<style>
+#header {
+margin-left: 5%;
+margin-right: 5%;
+box-shadow: 3px 5px 7px #666666;
+border: 1px solid black;
+}
+</style>
 <html>
 <link rel="icon" href="logoVersion2.png" type="image/x-icon"/>
 <title>FrostBurn Games</title>
 <head>
-<div>
-	<img src="logoVersion2.png" alt="FrostBurn Games Logo" style="width:100px;height:100px;float: left;">
+<div id="header">
+	<img src="logoVersion2.png" alt="FrostBurn Games Logo" style="width:45px;height:45px;float: left;">
 	<p><b>Welcome to FrostBurn Games</b></p>
 </div>
 </head>
 <body>
 <a href="gamelist.html">Game List</a>
 <p>.</p>
+<div>
 <p>If you're staying on this site for awhile then vvv</p>
 <input type="button" value="Start audio player" onclick="popitup2();">
+</div>
 <script>
 function popitup2() {
 	console.log("Creating audio player window")
@@ -39,7 +49,7 @@ function popitup2() {
 </body>
 </html>
 
-<!-- 
+<!--
 <iframe src="games/strikeforceheroes.html" name="targetframe" allowTransparency="true" scrolling="no" frameborder="0" >
     </iframe>
 

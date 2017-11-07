@@ -4,9 +4,19 @@ This is the new game player
 Don't stare at the code.
 -->
 <!DOCTYPE html>
+<style>
+
+</style>
 <html>
 <link rel="icon" href="logoVersion2.png" type="image/x-icon"/>
 <title>Gameplayer - FrostBurn Games</title>
+<h1>Game player</h1>
+<div id="gameplayer"></div>
+<body>
+<a href="index.html">Return to menu</a>
+<a href="gamelist.html">Return to gamelist</a>
+<div id=description></div>
+</body>
 <script>
 //var url_string = "http://www.example.com/t.html?a=1&b=3&c=m2-m3-m4-m5"; //window.location.href
 var url_string = window.location.href
@@ -19,15 +29,25 @@ console.log(res);
 console.log(res[1])
 var cp = res[1];
 if(cp=='game=strikeforceheroes'){
-	console.log("cool cash")
+	console.log("Loading Strike Force Heroes");
+	document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="games/swf/strike-force-heroes-13367.swf"></object>'
+	document.getElementById('description').innerHTML = '<p>This game is made by JuiceTin</p>'
 }
+if(cp=='game=strikeforceheroes2'){
+	console.log("Loading Strike Force Heroes 2")
+	document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="games/swf/strike-force-heroes--14775.swf"></object>'
+	document.getElementById('description').innerHTML = '<p>This game is made by JuiceTin</p>'
+}
+if(cp=='game=strikeforceheroes3'){
+	console.log("Loading Strike Force Heroes 3")
+	document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="games/swf/strike-force-heroes--17706.swf"></object>'
+	document.getElementById('description').innerHTML = '<p>This game is made by JuiceTin</p>'
+}
+
 console.log(window.location.href);
 </script>
-<body>
-<p>Game player</p>
-<a href="index.html">Return to menu</a>
-<a href="gamelist.html">Return to gamelist</a>
-</body>
+
+
 </html>
 
 <!--
