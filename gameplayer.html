@@ -117,20 +117,13 @@ text-align: center;
   	document.getElementById('description').innerHTML = '<p><b>This game is made by EffingGames.</b> Stick Figure Badminton 3 is a great game for an 1v1 between friends too.</p>'
   	document.getElementById('title').innerHTML = '<h1>Stick Figure Badminton 3</h1>'
   	var runcorrect = true
+  }
   if(cp=='game=animatorvsanimation'){
     console.log('Loading Animator vs Animation')
     document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="games/swf/animatorvsanimation.swf"></object>'
-    document.getElementById('description').innerHTML = '<p><b>This game is made by Charles Yeh and Alan Becker.</b> Animator vs Animation is a game version of a series of popular animation by Alan Becker. I recommend you watch the animations before playing this game :-D. <b>Controls:</b> WASD: Move, IJKL: select a tool, Q: grab tool/let go of tool, E: toggle tool select & crosshairs, SPACE: attack with tool, U: swat cursor, U+WASD: punch/kick, O: defend, S+O: fetal position</p>'
+    document.getElementById('description').innerHTML = '<p><b>This game is made by <a href="http://eactiv.com/charlesyay/">Charles Yeh</a> and <a href="http://www.alanbecker.net/">Alan Becker</a>.</b> Animator vs Animation is the game version of a series of popular animation by Alan Becker. I recommend you watch the <a href="https://www.youtube.com/playlist?list=PLApQDjGo-nscI6BXJKK_TrxxyJphlsoff">animations</a> before playing this game :-D. <b>Controls:</b> <b>WASD:</b> Move, <b>IJKL:</b> select a tool, <b>Q:</b> grab tool/let go of tool, <b>E:</b> toggle tool select & crosshairs, <b>SPACE:</b> attack with tool, <b>U:</b> swat cursor, <b>U+WASD:</b> punch/kick, <b>O:</b> defend, <b>S+O:</b> fetal position</p>'
     document.getElementById('title').innerHTML = '<h1>Animator vs Animation</h1>'
     var runcorrect = true
-  if(cp=='game=template'){
-    console.log("Loading Stick Figure Badminton 2")
-  	document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="games/swf/game-name.swf"></object>'
-  	document.getElementById('description').innerHTML = '<p><b>This game is made by Company-name.</b> A small description.</p>'
-  	document.getElementById('title').innerHTML = '<h1>Game-name</h1>'
-  	var runcorrect = true
-  }
-  }
   }
   else{
   	if(runcorrect==false){
