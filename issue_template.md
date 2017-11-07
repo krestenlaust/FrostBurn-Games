@@ -1,3 +1,7 @@
-To make a game request make the title "Request: game-name" and link the website, preferred: armorgames.com.
 
-To report an issue. Then just complete the report as usual.
+
+
+To make a game request create issue with the "game request" label and link the game, preferred: [armorgames.com](armorgames.com).
+To ask a question simply use the "question" label.
+To report an issue. use the "bug" label.
+And make an suggestion with the "suggestion" label.
