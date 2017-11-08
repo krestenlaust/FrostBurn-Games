@@ -12,6 +12,7 @@ div.sticky {
   box-shadow: 3px 5px 7px #666666;
   border: 1px solid black;
   text-align: center;
+  background-color: #ffffff;
 }
 #footer {
   position: absolute;
@@ -20,6 +21,9 @@ div.sticky {
   left: 0;
   padding: 3px;
   background-color: #efefef;
+  text-align: center;
+}
+#centertext {
   text-align: center;
 }
 </style>
@@ -31,8 +35,8 @@ div.sticky {
       <input type="image" src="logoVersion2.png" onclick="returnm();" style="width:50px;height:50px;float: left" />
       <p><b>FrostBurn Games</b></p>
     </div>
-    <h1>Gamelist</h1>
-    <div><!--Text on gamelist.html-->
+    <h1 id=centertext >Gamelist</h1>
+    <div id=centertext ><!--Text on gamelist.html-->
       <p>Right now you can search with CTRL+F</p>
       <p>I havent implemented a search field yet.</p>
     </div>
@@ -48,7 +52,9 @@ div.sticky {
     	<a href="gameplayer.html?game=strikeforceheroes3">Strike Force Heroes 3</p></a>
     	<a href="gameplayer.html?game=stickfigurebadminton2">Stick Figure Badminton 2</p></a>
     	<a href="gameplayer.html?game=stickfigurebadminton3">Stick Figure Badminton 3</p></a>
-      <a href="gameplayer.html?game=animatorvsanimation">Animator vs Animation(Reported as stolen)</p></a>
+      <a href="gameplayer.html?game=raze">Raze</p></a>
+      <a href="gameplayer.html?game=raze2">Raze 2</p></a>
+      <a href="gameplayer.html?game=raze3">Raze 3</p></a>
     </div>
     <!-- <a href="index.html">Return to menu</a> -->
     <input id="return to menu" type="button" value="Return to Menu" onclick="returnm();" />

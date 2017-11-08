@@ -12,11 +12,12 @@ div.sticky {
 	top: 0;
 }
 #header {
-margin-left: 5%;
-margin-right: 5%;
-box-shadow: 3px 5px 7px #666666;
-border: 1px solid black;
-text-align: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  box-shadow: 3px 5px 7px #666666;
+  border: 1px solid black;
+  text-align: center;
+  background-color: #ffffff;
 }
 #footer {
   position: absolute;
@@ -27,11 +28,26 @@ text-align: center;
   background-color: #efefef;
   text-align: center;
 }
+#gameplayer {
+  /*transform: scale(1.0);*/
+  text-align: left;
+}
+#closefullscreen {
+  z-index:1;
+  position: absolute;
+}
+
+
+
+/*
+#gameplayer {
+  text-align: center;
+}
+*/
 </style>
 <html>
   <head>
     <div id="header" class="sticky">
-    	<!-- <img src="logoVersion2.png" alt="FrostBurn Games Logo" style="width:45px;height:45px;float: left;"> -->
       <input type="image" src="logoVersion2.png" onclick="returnm();" style="width:50px;height:50px;float: left" />
       <p><b>FrostBurn Games</b></p>
     </div>
@@ -42,27 +58,23 @@ text-align: center;
   <div id="title">
   	<h1>Game player</h1>
   </div>
+  <input id="closefullscreen" type="button" value="Close Fullscreen" onclick="closefullscreen();" />
   <div id="gameplayer"></div> <!-- This is the function that gets changed with url parameter -->
 
   <body>
 <!--
-    <a href="index.html">Return to menu</a>
-    <a href="gamelist.html">Return to gamelist</a>
     <input type="image" src="images/full-screen.png" /> -->
     <input id="return to menu" type="button" value="Return to Menu" onclick="returnm();" />
     <input id="return to gamelist" type="button" value="Return to Gamelist" onclick="returngl();" />
     <input id="toggle header" type="button" value="Toggle Header" onclick="toggleheader();" />
-    <!-- <input id="fullscreen" type="button" value="Full-Screen WIP" onclick="fullscreen();" /> -->
-    <!-- <input type="radio" name="z" onclick="document.body.style.zoom=1.25;this.blur();">Zoom<br> -->
-    <input id="toggle zoom" type="button" value="Zoom in" onclick="document.body.style.zoom=1.25;this.blur();">
-    <input id="toggle zoom" type="button" value="Zoom out" onclick="document.body.style.zoom=1.0;this.blur();">
-    <!--<input type="radio" name="z" onclick="document.body.style.zoom=1.0;this.blur();">Zoom out<br>-->
-    <div id=description></div> <!-- This generates a discription -->
+    <input id="fullscreen" type="button" value="Full-Screen" onclick="fullscreen();" />
+    <div id=description></div>
     <div id="footer">
     	<p><b><a href="https://github.com/kres0345/FrostBurn-Games/issues/new">Request a game?</a></b> or <b><a href="https://github.com/kres0345/FrostBurn-Games/issues/new">Report an error</a></b> website created by kres0345</p>
     </div>
   </body>
   <script>
+    document.getElementById('closefullscreen').style.visibility = 'hidden';
     function toggleheader() {
     var x = document.getElementById("header");
     if (x.style.display === "none") {
@@ -78,7 +90,24 @@ text-align: center;
       window.location.href = "index.html";
     }
     function fullscreen() {
-      console.log("Coming soon")
+      document.getElementById("title").scrollIntoView();
+      gameplayer.style.cssText = "text-align: center; transform:scale(1.15);"
+      document.body.style.backgroundColor = "#0b0026" //#120028
+      document.getElementById('footer').style.visibility = 'hidden'; //hides the footer
+      var x = document.getElementById("header");
+      x.style.display = "none"; //Hides header
+      document.body.style.overflow = 'hidden'; //Hides scrollbars
+      document.getElementById('closefullscreen').style.visibility = 'visible'; //hides the close fullscreen button
+    }
+    function closefullscreen() {
+      gameplayer.style.cssText = "text-align: left;" //transform:scale(1.0);
+      document.body.style.backgroundColor = ""
+      var x = document.getElementById("header");
+      x.style.display = "block";
+      document.body.style.overflow = 'visible';
+      document.getElementById('closefullscreen').style.visibility = 'hidden';
+      document.getElementById('footer').style.visibility = 'visible'; //shows the footer
+
     }
   </script>
   <script>
@@ -121,12 +150,26 @@ text-align: center;
   	document.getElementById('title').innerHTML = '<h1>Stick Figure Badminton 3</h1>'
   	var runcorrect = true
   }
-  if(cp=='game=animatorvsanimation'){
-    console.log('Loading Animator vs Animation')
-    document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="games/swf/animatorvsanimation.swf"></object>'
-    document.getElementById('description').innerHTML = '<p><b>This game is made by <a href="http://eactiv.com/charlesyay/">Charles Yeh</a> and <a href="http://www.alanbecker.net/">Alan Becker</a>.</b> Animator vs Animation is the game version of a series of popular animation by Alan Becker. I recommend you watch the <a href="https://www.youtube.com/playlist?list=PLApQDjGo-nscI6BXJKK_TrxxyJphlsoff">animations</a> before playing this game :-D. <b>Controls:</b> <b>WASD:</b> Move, <b>IJKL:</b> select a tool, <b>Q:</b> grab tool/let go of tool, <b>E:</b> toggle tool select & crosshairs, <b>SPACE:</b> attack with tool, <b>U:</b> swat cursor, <b>U+WASD:</b> punch/kick, <b>O:</b> defend, <b>S+O:</b> fetal position</p>'
-    document.getElementById('title').innerHTML = '<h1>Animator vs Animation</h1>'
-    var runcorrect = true
+  if(cp=='game=raze'){
+  	console.log("Loading Raze")
+  	document.getElementById('gameplayer').innerHTML = '<object width="700" height="600" data="games/swf/raze-5395.swf"></object>'
+  	document.getElementById('description').innerHTML = '<p><b>This game is made by JuiceTin.</b> This is also a childhood forming game.</p>'
+  	document.getElementById('title').innerHTML = '<h1>Raze</h1>'
+  	var runcorrect = true
+  }
+  if(cp=='game=raze2'){
+  	console.log("Loading Raze 2")
+  	document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="games/swf/raze-2-12275.swf"></object>'
+  	document.getElementById('description').innerHTML = '<p><b>This game is made by JuiceTin.</b> Raze 2 is an even better game than the first(in my opinion).</p>'
+  	document.getElementById('title').innerHTML = '<h1>Raze 2</h1>'
+  	var runcorrect = true
+  }
+  if(cp=='game=template'){
+  	console.log("Loading Template")
+  	document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="games/swf/raze-3-15979.swf"></object>'
+  	document.getElementById('description').innerHTML = '<p><b>This game is made by Game dev name.</b> Description.</p>'
+  	document.getElementById('title').innerHTML = '<h1>Template</h1>'
+  	var runcorrect = true
   }
   else{
   	if(runcorrect==false){
@@ -137,7 +180,6 @@ text-align: center;
   console.log(window.location.href);
   </script>
 </html>
-
 <!--
 Secret messeage:
 01101000 01100101 01101100 01101100 01101111 00100000 01101000 01101111 01110111 00100000 01100001 01110010 01100101 00100000 01111001 01101111 01110101 01110010 00100000 01100100 01100001 01111001 00111111
