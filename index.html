@@ -69,9 +69,9 @@ div.sticky {
     </div>
     <p>Top games</p>
     <div class="games">
-      <p><img src="images/strikeforceheroes.png" alt="Game2" width="65px" height="65px">Strike Force Heroes</p>
-      <p><img src="images/stickfigurebadminton2.png" alt="Game2" width="65px" height="65px">Stick Figure Badminton 2</p>
-      <p><img src="images/full-screen.png" alt="Game3" width="65px" height="65px">Wonder Golf</p>
+      <p><input type="image" src="images/strikeforceheroes.png" onclick="strikeforceheroes();" style="width:65px;height:65px" /><a href="gameplayer.html?game=strikeforceheroes">Strike Force Heroes</p>
+      <p><input type="image" src="images/stickfigurebadminton2.png" onclick="stickfigurebadminton2();" style="width:65px;height:65px" /><a href="gameplayer.html?game=stickfigurebadminton2">Stick Figure Badminton 2</p>
+      <p><input type="image" src="images/zombotron.png" onclick="zombotron();" style="width:65px;height:65px" /><a href="gameplayer.html?game=zombotron2">Zombotron 2</p>
     </div>
     <div id="footer">
     	<p><b><a href="https://github.com/kres0345/FrostBurn-Games/issues/new">Request a game?</a></b>, <b><a href="https://github.com/kres0345/FrostBurn-Games/issues/new">Report an error</a></b> or <b><a href="https://github.com/kres0345/FrostBurn-Games/projects/1">Follow development</a></b> website created by kres0345</p>
@@ -84,6 +84,15 @@ div.sticky {
     } else {
         x.style.display = "none";
     }
+    }
+    function zombotron() {
+      window.location.href = "gameplayer.html?game=zombotron2";
+    }
+    function stickfigurebadminton2() {
+      window.location.href = "gameplayer.html?game=stickfigurebadminton2";
+    }
+    function strikeforceheroes() {
+      window.location.href = "gameplayer.html?game=strikeforceheroes"
     }
     function returnm() {
       window.location.href = "index.html";
