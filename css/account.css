@@ -1,0 +1,46 @@
+div.sticky {
+  position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 80px;
+    background-color: #f1f1f1;
+}
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+li {
+  display: inline;
+}
+li a:hover {
+  background: #555;
+  color: white;
+}
+.active {
+    background-color: #4CAF50;
+    color: white;
+}
+#header {
+  margin-left: 5%;
+  margin-right: 5%;
+  box-shadow: 3px 5px 7px #666666;
+  border: 1px solid black;
+  text-align: center;
+  background-color: #ffffff;
+}
+#footer {
+  position: absolute;
+  right: 0;
+  bottom: -20%;
+  left: 0;
+  padding: 3px;
+  background-color: #efefef;
+  text-align: center;
+}
