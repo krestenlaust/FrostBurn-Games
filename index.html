@@ -81,8 +81,12 @@ div.sticky {
     var x = document.getElementById("header");
     if (x.style.display === "none") {
         x.style.display = "block";
+        document.cookie = "headerdisabled=false";
+        var cookie = document.cookie;
     } else {
         x.style.display = "none";
+        document.cookie = "headerenabled=true";
+        var cookie = document.cookie;
     }
     }
     function zombotron() {
