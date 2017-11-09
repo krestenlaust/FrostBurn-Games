@@ -31,6 +31,13 @@ div.sticky {
 }
 
 </style>
+<script> //Quick runs
+var cookie = document.cookie;
+if(cookie=="headerdisabled=true"){
+  var x1 = document.getElementById("header");
+  x1.style.display = "none";
+}
+</script>
 <html>
   <link rel="icon" href="logoVersion2.png" type="image/x-icon"/>
   <title>FrostBurn Games</title>
@@ -70,11 +77,6 @@ div.sticky {
     	<p><b><a href="https://github.com/kres0345/FrostBurn-Games/issues/new">Request a game?</a></b>, <b><a href="https://github.com/kres0345/FrostBurn-Games/issues/new">Report an error</a></b> or <b><a href="https://github.com/kres0345/FrostBurn-Games/projects/1">Follow development</a></b> website created by kres0345</p>
     </div>
     <script>
-    var cookie = document.cookie;
-    if(cookie=="headerdisabled=true"){
-      var x1 = document.getElementById("header");
-      x1.style.display = "none";
-    }
     function toggleheader() {
     var x1 = document.getElementById("header");
     if (x1.style.display === "none") {
