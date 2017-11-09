@@ -36,21 +36,14 @@ div.sticky {
   <title>FrostBurn Games</title>
 
   <head>
-    <div class="sticky" id="header">
+    <div class="sticky" id="header"> <!-- !!!HEADER HERE!!! (I keep forgetting where I place it) -->
       <input type="image" src="logoVersion2.png" onclick="returnm();" style="width:50px;height:50px;float: left" />
       <p><b>Welcome to FrostBurn Games</b></p>
+      <input type="button" onclick="deleteAllCookies();" />Delete Cookies
     </div>
   </head>
 
   <body>
-    <!--
-    <input type="radio" name="z" onclick="document.body.style.zoom=1.0;this.blur();">100%<br>
-    <input type="radio" name="z" onclick="document.body.style.zoom=1.5;this.blur();">150%<br>
-    <input type="radio" name="z" onclick="document.body.style.zoom=2.0;this.blur();">200%<br>
-    <input type="radio" name="z" onclick="document.body.style.zoom=5.0;this.blur();">500%<br>
-    <input type="radio" name="z" onclick="document.body.style.zoom=10.0;this.blur();">1000%<br></p>
-  -->
-
     <p>.</p>
     <p>vvv To start playing click "Gamelist" vvv</p>
     <input id="gamelistbutton" type="button" value="Gamelist" onclick="gamelist();" />
@@ -77,16 +70,35 @@ div.sticky {
     	<p><b><a href="https://github.com/kres0345/FrostBurn-Games/issues/new">Request a game?</a></b>, <b><a href="https://github.com/kres0345/FrostBurn-Games/issues/new">Report an error</a></b> or <b><a href="https://github.com/kres0345/FrostBurn-Games/projects/1">Follow development</a></b> website created by kres0345</p>
     </div>
     <script>
+    var cookie = document.cookie;
+    if(cookie=="headerdisabled=true"){
+      var x1 = document.getElementById("header");
+      x1.style.display = "none";
+    }
     function toggleheader() {
-    var x = document.getElementById("header");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-        document.cookie = "headerdisabled=false";
-        var cookie = document.cookie;
+    var x1 = document.getElementById("header");
+    if (x1.style.display === "none") {
+        x1.style.display = "block";
+        //document.cookie = "headerdisabled=false";
+        document.cookie = "headerdisabled=false; expires=Thu, 18 Dec 2018 12:00:00 UTC; path=/";
+        //var cookie = document.cookie;
+        console.log(document.cookie);
     } else {
-        x.style.display = "none";
-        document.cookie = "headerenabled=true";
-        var cookie = document.cookie;
+        x1.style.display = "none";
+        document.cookie = "headerdisabled=true; expires=Thu, 18 Dec 2018 12:00:00 UTC; path=/";
+        //var cookie = document.cookie;
+        console.log(document.cookie);
+    }
+    }
+    function deleteAllCookies() {
+    var cookies = document.cookie.split(";");
+    for (var i = 0; i < cookies.length; i++) {
+        var cookie = cookies[i];
+        var eqPos = cookie.indexOf("=");
+        var name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
+        document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
+    console.log("Done")
+    console.log(document.cookie)
     }
     }
     function zombotron() {
