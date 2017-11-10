@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" type="text/css" href="css/headermenu.css">
+<link rel="stylesheet" type="text/css" href="css/button.css">
 <style>
 div.sticky {
   position: -webkit-sticky;
@@ -63,13 +64,13 @@ if(cookie=="headerdisabled=true"){
   <body>
     <p>.</p>
     <p>vvv To start playing click "Gamelist" vvv</p>
-    <input id="gamelistbutton" type="button" value="Gamelist" onclick="gamelist();" />
+    <input class="button" id="gamelistbutton" type="button" value="Gamelist" onclick="gamelist();" />
     <!-- <a href="gamelist.html">Game List</a> -->
-    <input id="toggle header" type="button" value="Toggle Header" onclick="toggleheader();" />
+    <input class="button" id="toggle header" type="button" value="Toggle Header" onclick="toggleheader();" />
     <p>.</p>
     <div>
       <p>If you're staying on this site for awhile then vvv</p>
-      <input type="button" value="Start audio player" onclick="popitup2();">
+      <input class="button" type="button" value="Start audio player" onclick="popitup2();">
     </div>
     <div id="news">
       <h1><b>News/updates:</b></h1>

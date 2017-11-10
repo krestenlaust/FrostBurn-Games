@@ -2,6 +2,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" type="text/css" href="css/gamelist.css">
 <link rel="stylesheet" type="text/css" href="css/headermenu.css">
+<link rel="stylesheet" type="text/css" href="css/button.css">
 <script> //Quick runs
 var cookie = document.cookie;
 if(cookie=="headerdisabled=true"){
@@ -26,6 +27,8 @@ if(cookie=="headerdisabled=true"){
       <p>Right now you can search with CTRL+F</p>
       <p>I havent implemented a search field yet.</p>
     </div>
+    <input class="button" id="toggle header" type="button" value="Toggle Header" onclick="toggleheader();" />
+    <input class="button" id="return to menu" type="button" value="Return to Menu" onclick="returnm();" />
     <p><b>Gamelist:</b></p>
     <div id="footer">
     	<p><b><a href="https://github.com/kres0345/FrostBurn-Games/issues/new">Request a game?</a></b>, <b><a href="https://github.com/kres0345/FrostBurn-Games/issues/new">Report an error</a></b> or <b><a href="https://github.com/kres0345/FrostBurn-Games/projects/1">Follow development</a></b> website created by kres0345</p>
@@ -58,17 +61,24 @@ if(cookie=="headerdisabled=true"){
       <a href="gameplayer.html?game=worldbasketcup">World Basket Cup</p></a>
     </div>
     <!-- <a href="index.html">Return to menu</a> -->
-    <input id="return to menu" type="button" value="Return to Menu" onclick="returnm();" />
-    <div> <!--Standard links-->
-    	<p>.</p>
-    	<p><i><b>vvv old links vvv</b></i></p>
-    	<a href="games/strikeforceheroes.html">Strike Force Heroes</a>
-    	<a href="games/strikeforceheroes2.html">Strike Force Heroes 2</a>
-    	<a href="games/strikeforceheroes3.html">Strike Force Heroes 3</a>
-    </div>
     <script>
     function returnm() {
       window.location.href = "index.html";
+    }
+    function toggleheader() {
+    var x1 = document.getElementById("header");
+    if (x1.style.display === "none") {
+        x1.style.display = "block";
+        document.cookie = "headerdisabled=false";
+        //document.cookie = "headerdisabled=false; expires=Thu, 18 Dec 2018 12:00:00 UTC; path=/";
+        //var cookie = document.cookie;
+        console.log(document.cookie);
+    } else {
+        x1.style.display = "none";
+        document.cookie = "headerdisabled=true";
+        //var cookie = document.cookie;
+        console.log(document.cookie);
+    }
     }
     </script>
   </body>

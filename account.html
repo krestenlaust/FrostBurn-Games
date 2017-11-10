@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <link rel="stylesheet" type="text/css" href="css/account.css">
 <link rel="stylesheet" type="text/css" href="css/headermenu.css">
+<link rel="stylesheet" type="text/css" href="css/button.css">
 <script> //Quick runs
   var cookie = document.cookie;
   if(cookie=="headerdisabled=true"){
@@ -39,9 +40,9 @@
     <div id="settings">
       <a name="settings"><b>Settings:</b></a>
       <p>Your options are:</p>
-      <input type="button" value="Toggle header" onclick="toggleheader();"/>
-      <input type="button" onclick="deleteAllCookies();" value="Delete cookies"/>
-      <input type="button" value="Show cookies" onclick="var cookie = document.cookie;alert(`Your cookies are ${cookie}`);"/>
+      <input class="button" type="button" value="Toggle header" onclick="toggleheader();"/>
+      <input class="button" type="button" onclick="deleteAllCookies();" value="Delete cookies"/>
+      <input class="button" type="button" value="Show cookies" onclick="var cookie = document.cookie;alert(`Your cookies are ${cookie}`);"/>
     </div>
   </head>
 </html>
