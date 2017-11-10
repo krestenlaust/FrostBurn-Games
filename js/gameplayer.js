@@ -107,49 +107,56 @@ if(cp=='game=ageofwar'){
   console.log("Loading Age of War")
   document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="games/swf/age-of-war-616.swf"></object>'
   document.getElementById('description').innerHTML = "<p><b>This game is made by Game dev name.</b> Description.</p>"
-  document.getElementById('title').innerHTML = '<h1>Template</h1>'
+  document.getElementById('title').innerHTML = '<h1>Age of War</h1>'
   var runcorrect = true
 }//
 if(cp=='game=idlesword'){
   console.log("Loading Idle Sword")
   document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="games/swf/idle-sword-17913.swf"></object>'
   document.getElementById('description').innerHTML = "<p><b>This game is made by Game dev name.</b> Description.</p>"
-  document.getElementById('title').innerHTML = '<h1>Template</h1>'
+  document.getElementById('title').innerHTML = '<h1>Idle Sword</h1>'
   var runcorrect = true
 }//
 if(cp=='game=flight'){
   console.log("Loading Flight")
   document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="games/swf/flight-7598.swf"></object>'
   document.getElementById('description').innerHTML = "<p><b>This game is made by Game dev name.</b> Description.</p>"
-  document.getElementById('title').innerHTML = '<h1>Template</h1>'
+  document.getElementById('title').innerHTML = '<h1>Flight</h1>'
   var runcorrect = true
 }//jacksmith-14015.swf
 if(cp=='game=jacksmith'){
   console.log("Loading JackSmith")
   document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="games/swf/jacksmith-14015.swf"></object>'
   document.getElementById('description').innerHTML = "<p><b>This game is made by Game dev name.</b> Description.</p>"
-  document.getElementById('title').innerHTML = '<h1>Template</h1>'
+  document.getElementById('title').innerHTML = '<h1>Jack Smith</h1>'
   var runcorrect = true
 }//
 if(cp=='game=cyclomaniacs2'){
   console.log("Loading Cyclomaniacs 2")
   document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="games/swf/cyclomaniacs-2-12478.swf"></object>'
   document.getElementById('description').innerHTML = "<p><b>This game is made by Game dev name.</b> Description.</p>"
-  document.getElementById('title').innerHTML = '<h1>Template</h1>'
+  document.getElementById('title').innerHTML = '<h1>Cyclomaniacs 2</h1>'
   var runcorrect = true
 }
 if(cp=='game=cyclomaniacs'){
   console.log("Loading Cyclomaniacs")
   document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="games/swf/cyclomaniacs-4355.swf"></object>'
   document.getElementById('description').innerHTML = "<p><b>This game is made by Game dev name.</b> Description.</p>"
-  document.getElementById('title').innerHTML = '<h1>Template</h1>'
+  document.getElementById('title').innerHTML = '<h1>Cyclomaniacs</h1>'
   var runcorrect = true
 }
 if(cp=='game=dolphinolympics2'){
   console.log("Loading Dolphin Olympics 2")
   document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="games/swf/dolphin-olympics-2-2019.swf"></object>'
   document.getElementById('description').innerHTML = "<p><b>This game is made by Game dev name.</b> Description.</p>"
-  document.getElementById('title').innerHTML = '<h1>Template</h1>'
+  document.getElementById('title').innerHTML = '<h1>Dolphin Olympics 2</h1>'
+  var runcorrect = true
+}
+if(cp=='game=worldbasketcup'){
+  console.log("Loading Dolphin Olympics 2")
+  document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="games/swf/World_Basket_Cup.swf"></object>'
+  document.getElementById('description').innerHTML = "<p><b>This game is made by Game dev name.</b> Description.</p>"
+  document.getElementById('title').innerHTML = '<h1>World Basket Cup</h1>'
   var runcorrect = true
 }
 if(cp=='game=template'){
