@@ -2,6 +2,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" type="text/css" href="css/headermenu.css">
 <link rel="stylesheet" type="text/css" href="css/button.css">
+<link rel="stylesheet" type="text/css" href="css/buttontg.css">
 <style>
 div.sticky {
   position: -webkit-sticky;
@@ -80,9 +81,10 @@ if(cookie=="headerdisabled=true"){
     <div id="topgames">
       <p><b>Top games:</b></p>
       <div class="games">
-        <p><input type="image" src="images/strikeforceheroes.png" onclick="strikeforceheroes();" style="width:65px;height:65px" /><a href="gameplayer.html?game=strikeforceheroes">Strike Force Heroes</p>
-        <p><input type="image" src="images/stickfigurebadminton2.png" onclick="stickfigurebadminton2();" style="width:65px;height:65px" /><a href="gameplayer.html?game=stickfigurebadminton2">Stick Figure Badminton 2</p>
-        <p><input type="image" src="images/zombotron.png" onclick="zombotron();" style="width:65px;height:65px" /><a href="gameplayer.html?game=zombotron2">Zombotron 2</p>
+        <p><image src="images/strikeforceheroes.png" alt="strikeforceheroes" style="width:65px;height:65px" /><a href="gameplayer.html?game=strikeforceheroes">Strike Force Heroes</p>
+        <p><input type="image" src="images/stickfigurebadminton2.png" onclick="window.location.href = 'gameplayer.html?game=stickfigurebadminton2';" style="width:65px;height:65px" /><a href="gameplayer.html?game=stickfigurebadminton2">Stick Figure Badminton 2</p>
+        <p><image src="images/zombotron.png" style="width:65px;height:65px" />Zombotron</p><input class="buttontg" type="button" value="Play Game" onclick="zombotron();">
+        <!--<p><input type="image" src="images/zombotron.png" onclick="zombotron();" style="width:65px;height:65px" /><a href="gameplayer.html?game=zombotron2">Zombotron 2</p>-->
       </div>
     </div>
     <div id="footer"> <!-- !!!FOOTER HERE!!! (I keep forgetting where I place it) -->
