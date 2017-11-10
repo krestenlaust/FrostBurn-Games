@@ -9,4 +9,8 @@
     display: inline-block;
     font-size: 10px;
     border-radius: 3px;
+    vertical-align: top;
+    position: relative;
+    right:85px;
+    top:9px;
 }
