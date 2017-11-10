@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <link rel="stylesheet" type="text/css" href="css/account.css">
+<link rel="stylesheet" type="text/css" href="css/headermenu.css">
 <script> //Quick runs
   var cookie = document.cookie;
   if(cookie=="headerdisabled=true"){
@@ -11,14 +12,14 @@
   <link rel="icon" href="logoVersion2.png" type="image/x-icon"/>
   <title>FrostBurn Games</title>
   <head>
-      <div class="sticky" id="header"> <!-- !!!HEADER HERE!!! (I keep forgetting where I place it) -->
-        <input type="image" src="logoVersion2.png" onclick="returnm();" style="width:50px;height:50px;float: left" />
-        <p><b>Welcome to FrostBurn Games</b></p>
-        <ul>
-          <li style="display: inline;"><a href="index.html">Index</a></li>
-          <li><a class="active" href="account.html">Account</a></li>
-        </ul>
-      </div>
+    <div class="sticky" id="header"> <!-- !!!HEADER HERE!!! (I keep forgetting where I place it) -->
+      <input type="image" src="logoVersion2.png" onclick="returnm();" style="width:50px;height:50px;float: left" />
+      <p><b>Welcome to FrostBurn Games</b></p>
+      <ul>
+        <li><a href="index.html">Index</a></li>
+        <li><a class="active" href="account.html">Account</a></li>
+      </ul>
+    </div>
       <div id="footer"> <!-- !!!FOOTER HERE!!! (I keep forgetting where I place it) -->
         <p><b><a href="https://github.com/kres0345/FrostBurn-Games/issues/new">Request a game?</a></b>, <b><a href="https://github.com/kres0345/FrostBurn-Games/issues/new">Report an error</a></b> or <b><a href="https://github.com/kres0345/FrostBurn-Games/projects/1">Follow development</a></b> website created by kres0345</p>
       </div>
@@ -28,16 +29,19 @@
     <a href="#cookies">Did you come here for the cookies?</a>
 
     <a name="Howitworks"><b>How this works:</b></a>
-    <p>Hello</p>
-    <a name="cookies"><b>Cookies:</b></a>
-    <p>The only cookies I create is the one's saving the state of the Header</p>
-    <p>But if you still want to delete your cookies then:</p>
-    <p><input type="button" onclick="deleteAllCookies();" value="Delete cookies"/>
-    <p>Or if instead just wants to see your cookies then:</p>
-    <input type="button" value="Show cookies" onclick="var cookie = document.cookie;alert(`Your cookies are ${cookie}`);"/>
+    <p>Right now a local account is just the cookie configurations.</p>
+    <div id="cookies">
+      <a name="cookies"><b>Cookies:</b></a>
+      <p>The only cookies I create is the one's saving the state of the Header</p>
+      <p>You can delete your cookies in the <a href="#settings">settings</a>.</p>
+      <p>You can also view your cookies in the <a href="#settings">settings</a>.</p>
+    </div>
     <div id="settings">
       <a name="settings"><b>Settings:</b></a>
+      <p>Your options are:</p>
       <input type="button" value="Toggle header" onclick="toggleheader();"/>
+      <input type="button" onclick="deleteAllCookies();" value="Delete cookies"/>
+      <input type="button" value="Show cookies" onclick="var cookie = document.cookie;alert(`Your cookies are ${cookie}`);"/>
     </div>
   </head>
 </html>
@@ -54,6 +58,9 @@
   alert("Cookies deleted(supposedly)");
   console.log(document.cookie)
   }
+  }
+  function returnm() {
+    window.location.href = "index.html";
   }
   function toggleheader() {
   var x1 = document.getElementById("header");

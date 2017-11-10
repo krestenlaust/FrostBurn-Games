@@ -44,3 +44,15 @@ li a:hover {
   background-color: #efefef;
   text-align: center;
 }
+#settings {
+  border:5px solid yellow;
+}
+#cookies {
+  border:5px solid green;
+}
+p {
+  font-family: sans-serif;
+}
+h1 {
+  font-family: sans-serif;
+}

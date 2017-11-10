@@ -14,12 +14,22 @@ div.sticky {
 #footer {
   position: absolute;
   right: 0;
-  bottom: -75%;
+  bottom: -80%;
   left: 0;
   padding: 3px;
   background-color: #efefef;
   text-align: center;
 }
 #centertext {
+  text-align: center;
+}
+p {
+  font-family: sans-serif;
+}
+h1 {
+  font-family: sans-serif;
+}
+#gamelistgames {
+  border: 5px solid black;
   text-align: center;
 }
