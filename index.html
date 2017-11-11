@@ -51,6 +51,7 @@ h1 {
 </style>
 <script> //Quick runs
 var cookie = document.cookie;
+console.log(cookie);
 if(cookie=="headerdisabled=true"){
   var x1 = document.getElementById("header");
   x1.style.display = "none";
@@ -107,13 +108,13 @@ if(cookie=="headerdisabled=true"){
     var x1 = document.getElementById("header");
     if (x1.style.display === "none") {
         x1.style.display = "block";
-        document.cookie = "headerdisabled=false";
+        document.cookie = "headerdisabled=false; path=/";
         //document.cookie = "headerdisabled=false; expires=Thu, 18 Dec 2018 12:00:00 UTC; path=/";
         //var cookie = document.cookie;
         console.log(document.cookie);
     } else {
         x1.style.display = "none";
-        document.cookie = "headerdisabled=true";
+        document.cookie = "headerdisabled=true; path=/";
         //var cookie = document.cookie;
         console.log(document.cookie);
     }
