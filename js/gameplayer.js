@@ -153,10 +153,24 @@ if(cp=='game=dolphinolympics2'){
   var runcorrect = true
 }
 if(cp=='game=worldbasketcup'){
-  console.log("Loading Dolphin Olympics 2")
+  console.log("Loading World Basket Cup")
   document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="games/swf/World_Basket_Cup.swf"></object>'
   document.getElementById('description').innerHTML = "<p><b>This game is made by Unknown creator.</b> A game about Basketball(I think).</p>"
   document.getElementById('title').innerHTML = '<h1>World Basket Cup</h1>'
+  var runcorrect = true
+}//
+if(cp=='game=armormayhemme'){
+  console.log("Loading Armor Mayhem Map Editor")
+  document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="games/swf/armor-mayhem-map-editor.swf"></object>'
+  document.getElementById('description').innerHTML = "<p><b>This editor is made by louissi.</b> It creates maps for Armor Mayhem.</p>"
+  document.getElementById('title').innerHTML = '<h1>Armor Mayhem Map Editor</h1>'
+  var runcorrect = true
+}
+if(cp=='game=armormayhem'){
+  console.log("Loading Armor Mayhem")
+  document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="games/swf/armor-mayhem-10215.swf"></object>'
+  document.getElementById('description').innerHTML = "<p><b>This game is made by louissi.</b> This is a great game, there should maybe be more weapons but a great game.</p>"
+  document.getElementById('title').innerHTML = '<h1>Armor Mayhem</h1>'
   var runcorrect = true
 }
 if(cp=='game=template'){
