@@ -29,7 +29,7 @@ h1 {
 #footer {
   position: absolute;
   right: 0;
-  bottom: -20%;
+  bottom: -50%;
   left: 0;
   padding: 3px;
   background-color: #efefef;
@@ -40,6 +40,9 @@ h1 {
 }
 #news {
   border:5px solid red;
+}
+#interest {
+  border:5px solid purple;
 }
 .games {
   text-align: center;
@@ -92,6 +95,9 @@ if(cookie=="headerdisabled=true"){
         <p><image class="tgimages" src="images/strikeforceheroes.png" alt="strike force heroes" style="width:65px;height:65px" /> Strike Force Heroes<input class="buttontg" type="button" value="Play Game" onclick="strikeforceheroes();"></p>
         <p><image class="tgimages" src="images/stickfigurebadminton2.png" alt="stick figure badminton 2" style="width:65px;height:65px" /> Stick Figure Badminton 2<input class="buttontg" type="button" value="Play Game" onclick="stickfigurebadminton2();"></p>
         <p><image class="tgimages" src="images/plazmaburst2.png" alt="Plazma Burst 2" style="width:65px;height:65px" /> Plazma Burst 2<input class="buttontg" type="button" value="Play Game" onclick="plazmaburst2();"></p>
+    </div>
+    <div id="interest">
+      <script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/1173_RC01/embed_loader.js"></script> <script type="text/javascript"> trends.embed.renderExploreWidget("TIMESERIES", {"comparisonItem":[{"keyword":"frostburn-games","geo":"","time":"today 1-m"}],"category":8,"property":""}, {"exploreQuery":"cat=8&date=today 1-m&q=frostburn-games","guestPath":"https://trends.google.com:443/trends/embed/"}); </script>
     </div>
     <div id="footer"> <!-- !!!FOOTER HERE!!! (I keep forgetting where I place it) -->
     	<p><b><a href="https://github.com/kres0345/FrostBurn-Games/issues/new">Request a game?</a></b>, <b><a href="https://github.com/kres0345/FrostBurn-Games/issues/new">Report an error</a></b> or <b><a href="https://github.com/kres0345/FrostBurn-Games/projects/1">Follow development</a></b> website created by kres0345</p>
