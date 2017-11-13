@@ -51,9 +51,29 @@ h1 {
   border:5px solid purple;
   border-radius: 6px;
 }
+/*
 .games {
   text-align: center;
   -webkit-columns: 100px 3;
+}
+*/
+.games {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+* {
+    box-sizing: border-box;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+@media (max-width:600px) {
+    .games {
+        width: 100%;
+    }
 }
 </style>
 
@@ -98,11 +118,20 @@ h1 {
     </div>
     <div id="topgames">
       <p><b>Top games:</b></p>
-      <div class="games">
-        <p><image class="tgimages" src="images/zombotron2.png" alt="zombotron" style="width:65px;height:65px" /> Zombotron 2<input class="buttontg" type="button" value="Play Game" onclick="zombotron();"></p>
-        <p><image class="tgimages" src="images/strikeforceheroes.png" alt="strike force heroes" style="width:65px;height:65px" /> Strike Force Heroes<input class="buttontg" type="button" value="Play Game" onclick="strikeforceheroes();"></p>
-        <p><image class="tgimages" src="images/stickfigurebadminton2.png" alt="stick figure badminton 2" style="width:65px;height:65px" /> Stick Figure Badminton 2<input class="buttontg" type="button" value="Play Game" onclick="stickfigurebadminton2();"></p>
-        <p><image class="tgimages" src="images/plazmaburst2.png" alt="Plazma Burst 2" style="width:65px;height:65px" /> Plazma Burst 2<input class="buttontg" type="button" value="Play Game" onclick="plazmaburst2();"></p>
+      <div class="row">
+        <div class="games">
+          <p class="gamesborder"><image class="tgimages" src="images/zombotron2.png" alt="zombotron" style="width:65px;height:65px" /> Zombotron 2<input class="buttontg" type="button" value="Play Game" onclick="zombotron();"></p>
+        </div>
+        <div class="games">
+          <p><image class="tgimages" src="images/strikeforceheroes.png" alt="strike force heroes" style="width:65px;height:65px" /> Strike Force Heroes<input class="buttontg" type="button" value="Play Game" onclick="strikeforceheroes();"></p>
+        </div>
+        <div class="games">
+          <p><image class="tgimages" src="images/stickfigurebadminton2.png" alt="stick figure badminton 2" style="width:65px;height:65px" /> Stick Figure Badminton 2<input class="buttontg" type="button" value="Play Game" onclick="stickfigurebadminton2();"></p>
+        </div>
+        <div class="games">
+          <p><image class="tgimages" src="images/plazmaburst2.png" alt="Plazma Burst 2" style="width:65px;height:65px" /> Plazma Burst 2<input class="buttontg" type="button" value="Play Game" onclick="plazmaburst2();"></p>
+        </div>
+      </div>
     </div>
     <div id="interest">
       <script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/1173_RC01/embed_loader.js"></script> <script type="text/javascript"> trends.embed.renderExploreWidget("TIMESERIES", {"comparisonItem":[{"keyword":"frostburn-games","geo":"","time":"today 1-m"}],"category":8,"property":""}, {"exploreQuery":"cat=8&date=today 1-m&q=frostburn-games","guestPath":"https://trends.google.com:443/trends/embed/"}); </script>
