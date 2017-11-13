@@ -2,6 +2,7 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    overflow: hidden;
     width: 80px;
     background-color: #f1f1f1;
     display: inline;
@@ -15,6 +16,7 @@ li a {
 }
 li {
   display: inline;
+  float: left; /* Places the buttons */
 }
 li a:hover {
   background: #555;
