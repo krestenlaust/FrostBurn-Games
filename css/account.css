@@ -63,7 +63,8 @@ h1 {
 }
 
 
-/* Sign up */
+
+/* Sign up
 input[type=text], input[type=password] {
     width: 100%;
     padding: 12px 20px;
@@ -73,10 +74,9 @@ input[type=text], input[type=password] {
     box-sizing: border-box;
 }
 .signupbtn {
-    background-color: #4CAF50; /* Green */
+    background-color: #4CAF50;
     border: none;
     color: white;
-    /*padding: 15px 32px;*/
     padding: 14px 19px;
     text-align: center;
     text-decoration: none;
@@ -95,3 +95,4 @@ input[type=text], input[type=password] {
 .containerlogin {
     padding: 16px;
 }
+*/
