@@ -26,7 +26,7 @@ li a:hover {
 .active {
     background-color: #4CAF50;
     color: white;
-}
+}/*
 #header {
   margin-left: 5%;
   margin-right: 5%;
@@ -34,16 +34,8 @@ li a:hover {
   border: 1px solid black;
   text-align: center;
   background-color: #ffffff;
-}
-#footer {
-  position: absolute;
-  right: 0;
-  bottom: -30%;
-  left: 0;
-  padding: 3px;
-  background-color: #efefef;
-  text-align: center;
-}
+  z-index: 1;
+}*/
 #settings {
   border:5px solid red;
   padding: 16px;
@@ -62,7 +54,7 @@ h1 {
   font-family: sans-serif;
 }
 .title {
-  
+
 }
 
 

@@ -2,7 +2,7 @@ div.sticky {
   position: -webkit-sticky;
 	position: sticky;
 	top: 0;
-}
+}/*
 #header {
   margin-left: 5%;
   margin-right: 5%;
@@ -11,16 +11,7 @@ div.sticky {
   text-align: center;
   background-color: #ffffff;
   z-index: 1;
-}
-#footer {
-  position: absolute;
-  right: 0;
-  bottom: -90%;
-  left: 0;
-  padding: 3px;
-  background-color: #efefef;
-  text-align: center;
-}
+}*/
 #centertext {
   text-align: center;
 }
