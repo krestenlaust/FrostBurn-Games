@@ -51,7 +51,20 @@
     <div id="signup1">
       <a style="font-size:20px;"name="signup"><b>Signup:</b></a>
       <div id="signup">
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScc-nTqsX0Pdc5cMkpVJq1J4Ivov5aePZo3Efyf_TbIPSIMgg/viewform?embedded=true" width="760" height="1050" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+        <form action="login.php" method="post">
+          <div class="containerlogin">
+            <p>Register</p>
+            <label><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+            <label><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+            <label><b>Repeat Password</b></label>
+            <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+            <input type="checkbox" checked="checked"> Remember me
+            <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+            <button type="submit" class="signupbtn">Sign Up</button>
+          </div>
+        </form>
       </div>
     </div>
   </head>
