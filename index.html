@@ -50,14 +50,7 @@ h1 {
   -webkit-columns: 100px 3;
 }
 </style>
-<script> //Quick runs
-var cookie = document.cookie;
-console.log(cookie);
-if(cookie=="headerdisabled=true"){
-  var x = document.getElementById("header");
-  x.style.display = "none";
-}
-</script>
+
 <html>
   <link rel="icon" href="logoVersion2.png" type="image/x-icon"/>
   <title>FrostBurn Games</title>
@@ -72,7 +65,14 @@ if(cookie=="headerdisabled=true"){
       </ul>
     </div>
   </head>
-
+  <script> //Quick runs
+  var cookie = document.cookie;
+  console.log(cookie);
+  if(cookie=="headerdisabled=true"){
+    var x = document.getElementById("header");
+    x.style.display = "none";
+  }
+  </script>
   <body>
     <p>vvv To start playing click "Gamelist" vvv</p>
     <input class="button" id="gamelistbutton" type="button" value="Gamelist" onclick="gamelist();" />
