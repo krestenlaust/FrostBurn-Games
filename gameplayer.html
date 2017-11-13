@@ -38,8 +38,21 @@ h1 {
   z-index:1;
   position: absolute;
 }
-
-
+#playersizedecrease {
+  z-index:1;
+  position: absolute;
+  margin-left: 7.1%;
+}
+#playersizeincrease {
+  z-index:1;
+  position: absolute;
+  margin-left: 12.0%;
+}
+#clearbackground {
+  z-index:1;
+  position: absolute;
+  margin-left: 17.1%;
+}
 
 /*
 #gameplayer {
@@ -72,7 +85,10 @@ if(cookie=="headerdisabled=true"){
   <div id="title">
   	<h1>Game player</h1>
   </div>
-  <input class="button" id="closefullscreen" type="button" value="Close Fullscreen" onclick="closefullscreen();" />
+  <input class="button" id="playersizeincrease" type="button" value="Scale (+)" onclick="increaseplayer();" />
+  <input class="button" id="playersizedecrease" type="button" value="Scale (-)" onclick="decreaseplayer();" />
+  <input class="button" id="closefullscreen" type="button" value="Exit Fullscreen" onclick="closefullscreen();" />
+  <input class="button" id="clearbackground" type="button" value="Clear BG" onclick="clearbackground();" />
   <div id="gameplayer"></div> <!-- This is the function that gets changed with url parameter -->
 
   <body>
@@ -90,6 +106,9 @@ if(cookie=="headerdisabled=true"){
   </body>
   <script>
     document.getElementById('closefullscreen').style.visibility = 'hidden';
+    document.getElementById('playersizeincrease').style.visibility = 'hidden';
+    document.getElementById('playersizedecrease').style.visibility = 'hidden';
+    document.getElementById('clearbackground').style.visibility = 'hidden';
     function toggleheader() {
     var x1 = document.getElementById("header");
     if (x1.style.display === "none") {
@@ -119,7 +138,10 @@ if(cookie=="headerdisabled=true"){
       var x = document.getElementById("header");
       x.style.display = "none"; //Hides header
       document.body.style.overflow = 'hidden'; //Hides scrollbars
-      document.getElementById('closefullscreen').style.visibility = 'visible'; //hides the close fullscreen button
+      document.getElementById('closefullscreen').style.visibility = 'visible'; //shows the close fullscreen button
+      document.getElementById('playersizeincrease').style.visibility = 'visible'; //Shows the "scale(+)" button
+      document.getElementById('playersizedecrease').style.visibility = 'visible'; //Shows the "scale(-)" button
+      document.getElementById('clearbackground').style.visibility = 'visible'; //Shows the "clear bg" button
     }
     function closefullscreen() {
       gameplayer.style.cssText = "text-align: left;" //transform:scale(1.0);
@@ -127,9 +149,20 @@ if(cookie=="headerdisabled=true"){
       var x = document.getElementById("header");
       x.style.display = "block";
       document.body.style.overflow = 'visible';
-      document.getElementById('closefullscreen').style.visibility = 'hidden';
+      document.getElementById('closefullscreen').style.visibility = 'hidden'; //Hides the close fullscreen button
       document.getElementById('footer').style.visibility = 'visible'; //shows the footer
-
+      document.getElementById('playersizeincrease').style.visibility = 'hidden'; //Hides the "scale(+)" button
+      document.getElementById('playersizedecrease').style.visibility = 'hidden'; //Hides the "scale(-)" button
+      document.getElementById('clearbackground').style.visibility = 'hidden'; //Hides the "clear bg" button
+    }
+    function increaseplayer() {
+      gameplayer.style.cssText = "text-align:center;vertical-align:middle;transform:scale(1.20);"
+    }
+    function decreaseplayer() {
+      gameplayer.style.cssText = "text-align:center;transform:scale(1.15);"
+    }
+    function clearbackground() {
+      document.body.style.backgroundColor = "White"
     }
     var runcorrect = false
     var url1 = window.location.href
