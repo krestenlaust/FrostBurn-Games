@@ -60,14 +60,6 @@ h1 {
 }
 */
 </style>
-<script> //Quick runs
-var cookies = document.cookie;
-if(cookies == "headerdisabled=true"){
-  var x = document.getElementById("header");
-  x.style.display = "none";
-  console.log("Header disabled")
-}
-</script>
 <html>
   <head>
     <div class="sticky" id="header"> <!-- NOTE !!!HEADER HERE!!! (I keep forgetting where I place it) -->
@@ -80,7 +72,14 @@ if(cookies == "headerdisabled=true"){
       </ul>
     </div>
   </head>
-
+  <script> //Quick runs
+  var cookies = document.cookie;
+  if(cookies == "headerdisabled=true"){
+    var x = document.getElementById("header");
+    x.style.display = "none";
+    console.log("Header disabled")
+  }
+  </script>
   <link rel="icon" href="logoVersion2.png" type="image/x-icon"/>
   <title>Gameplayer - FrostBurn Games</title>
   <div id="title">

@@ -3,14 +3,6 @@
 <link rel="stylesheet" type="text/css" href="css/headermenu.css">
 <link rel="stylesheet" type="text/css" href="css/button.css">
 <link rel="stylesheet" type="text/css" href="css/footer.css">
-<script> //Quick runs
-  var cookies = document.cookie;
-  if(cookies == "headerdisabled=true"){
-    var x = document.getElementById("header");
-    x.style.display = "none";
-    console.log("Header disabled")
-  }
-</script>
 <html>
   <link rel="icon" href="logoVersion2.png" type="image/x-icon"/>
   <title>FrostBurn Games</title>
@@ -24,6 +16,14 @@
         <li><a href="gamelist.html">Gamelist</a></li>
       </ul>
     </div>
+    <script> //Quick runs
+      var cookies = document.cookie;
+      if(cookies == "headerdisabled=true"){
+        var x = document.getElementById("header");
+        x.style.display = "none";
+        console.log("Header disabled")
+      }
+    </script>
     <div id="footer"> <!-- !!!FOOTER HERE!!! (I keep forgetting where I place it) -->
     	<p><b><a href="https://github.com/kres0345/FrostBurn-Games/issues/new">Request a game?</a></b>, <b><a href="https://github.com/kres0345/FrostBurn-Games/issues/new">Report an error</a></b> or <b><a href="https://github.com/kres0345/FrostBurn-Games/projects/1">Follow development</a></b> website made by kres0345, <i>Tip of the load:</i></p><p id="randomtip"></p>
     </div>
