@@ -141,13 +141,13 @@ h1 {
     var x = document.getElementById("header");
     if (x.style.display === "none") {
         x.style.display = "block";
-        document.cookie = "headerdisabled=false; path=/";
+        document.cookie = "headerdisabled=false;";
         //document.cookie = "headerdisabled=false; expires=Thu, 18 Dec 2018 12:00:00 UTC; path=/";
         //var cookie = document.cookie;
         console.log(document.cookie);
     } else {
         x.style.display = "none";
-        document.cookie = "headerdisabled=true; path=/";
+        document.cookie = "headerdisabled=true;";
         //var cookie = document.cookie;
         console.log(document.cookie);
     }
