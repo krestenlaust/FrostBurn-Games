@@ -96,13 +96,6 @@ if(cp=='game=hauntthehouse'){
   document.getElementById('title').innerHTML = '<h1>Haunt The House</h1>'
   var runcorrect = true
 }
-if(cp=='game=btd5'){
-  console.log("Loading Bloons Tower Defense 5")
-  document.getElementById('gameplayer').innerHTML = '<object width="780" height="600" data="games/swf/btd5.swf"></object>'
-  document.getElementById('description').innerHTML = "<p><b>This game is made by NinjaKiwi.</b> This is also a fantastic game. I LOVE IT :-P.</p>"
-  document.getElementById('title').innerHTML = '<h1>Bloons Tower Defense 5</h1>'
-  var runcorrect = true
-}//
 if(cp=='game=ageofwar'){
   console.log("Loading Age of War")
   document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="games/swf/age-of-war-616.swf"></object>'
@@ -171,6 +164,20 @@ if(cp=='game=armormayhem'){
   document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="games/swf/armor-mayhem-10215.swf"></object>'
   document.getElementById('description').innerHTML = "<p><b>This game is made by louissi.</b> This is a great game, there should maybe be more weapons but a great game.</p>"
   document.getElementById('title').innerHTML = '<h1>Armor Mayhem</h1>'
+  var runcorrect = true
+}
+if(cp=='game=ageofwar2'){
+  console.log("Loading Age of War 2")
+  document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="games/swf/age-of-war-2-publicOTM3.swf"></object>'
+  document.getElementById('description').innerHTML = "<p><b>This game is made by louissi.</b> This is a great game.</p>"
+  document.getElementById('title').innerHTML = '<h1>Age of War 2</h1>'
+  var runcorrect = true
+}
+if(cp=='game=sydneyshark'){
+  console.log("Loading Sydney Shark")
+  document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="games/swf/sydney-shark-5734.swf"></object>'
+  document.getElementById('description').innerHTML = "<p><b>This game is made by Wiesi.</b> A game requested.</p>"
+  document.getElementById('title').innerHTML = '<h1>Sydney Shark</h1>'
   var runcorrect = true
 }
 if(cp=='game=template'){
