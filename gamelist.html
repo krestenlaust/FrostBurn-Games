@@ -5,10 +5,11 @@
 <link rel="stylesheet" type="text/css" href="css/button.css">
 <link rel="stylesheet" type="text/css" href="css/footer.css">
 <script> //Quick runs
-var cookie = document.cookie;
-if(cookie=="headerdisabled=true"){
-  var x1 = document.getElementById("header");
-  x1.style.display = "none";
+var cookies = document.cookie;
+if(cookies == "headerdisabled=true"){
+  var x = document.getElementById("header");
+  x.style.display = "none";
+  console.log("Header disabled")
 }
 </script>
 <html>
@@ -72,16 +73,16 @@ if(cookie=="headerdisabled=true"){
       window.location.href = "index.html";
     }
     function toggleheader() {
-    var x1 = document.getElementById("header");
-    if (x1.style.display === "none") {
-        x1.style.display = "block";
-        document.cookie = "headerdisabled=false";
+    var x = document.getElementById("header");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+        document.cookie = "headerdisabled=false;";
         //document.cookie = "headerdisabled=false; expires=Thu, 18 Dec 2018 12:00:00 UTC; path=/";
         //var cookie = document.cookie;
         console.log(document.cookie);
     } else {
-        x1.style.display = "none";
-        document.cookie = "headerdisabled=true";
+        x.style.display = "none";
+        document.cookie = "headerdisabled=true;";
         //var cookie = document.cookie;
         console.log(document.cookie);
     }
