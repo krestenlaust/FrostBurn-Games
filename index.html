@@ -74,8 +74,8 @@ h1 {
     </div>
   </head>
   <script> //Quick runs
-  //var cookie = document.cookie;
-  console.log(cookie);
+  var cookies = document.cookie;
+  console.log(cookies);
   if($.cookie("headerdisabled") == "true"){
     var x = document.getElementById("header");
     x.style.display = "none";
