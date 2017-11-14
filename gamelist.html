@@ -4,14 +4,6 @@
 <link rel="stylesheet" type="text/css" href="css/headermenu.css">
 <link rel="stylesheet" type="text/css" href="css/button.css">
 <link rel="stylesheet" type="text/css" href="css/footer.css">
-<script> //Quick runs
-var cookies = document.cookie;
-if(cookies == "headerdisabled=true"){
-  var x = document.getElementById("header");
-  x.style.display = "none";
-  console.log("Header disabled")
-}
-</script>
 <html>
   <link rel="icon" href="logoVersion2.png" type="image/x-icon"/>
   <title>Gamelist - FrostBurn Games</title>
@@ -25,6 +17,14 @@ if(cookies == "headerdisabled=true"){
         <li><a class="active" href="gamelist.html">Gamelist</a></li>
       </ul>
     </div>
+    <script> //Quick runs
+    var cookies = document.cookie;
+    if(cookies == "headerdisabled=true"){
+      var x = document.getElementById("header");
+      x.style.display = "none";
+      console.log("Header disabled")
+    }
+    </script>
     <h1 id=centertext >Gamelist</h1>
     <div id=centertext ><!--Text on gamelist.html-->
       <p>Right now you can search with CTRL+F</p>
