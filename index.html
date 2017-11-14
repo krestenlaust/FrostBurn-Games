@@ -39,8 +39,8 @@ h1 {
 
 .games {
   float: left;
-  /* width: 33.33%; */
-  width: 25%;
+  width: 33.33%;
+  /* width: 25%; */
   padding: 15px;
 }
 * {
@@ -56,6 +56,35 @@ h1 {
         width: 100%;
     }
 }
+input[type=text] { /* Search Field */
+    width: 205px; /* NOTE: 130px */
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    margin: 10px;
+}
+input[type=text]:focus {
+    width: 99%;
+}
+/* Side blank bars
+body {
+  background: white;
+}
+.content {
+  max-width: 1400px;
+  /background: white;
+  padding: 10px;
+  margin: auto;
+}
+*/
 </style>
 
 <html>
@@ -81,7 +110,8 @@ h1 {
     console.log("Header disabled")
   }
   </script>
-  <body>
+  <noscript>Sorry, your browser does not support JavaScript, please use a suitable browser instead like Chrome</noscript>
+  <body class="content">
     <p>vvv To start playing click "Gamelist" vvv</p>
     <input class="button" id="gamelistbutton" type="button" value="Gamelist" onclick="gamelist();" />
     <!-- <a href="gamelist.html">Game List</a> -->
@@ -90,6 +120,9 @@ h1 {
       <p>If you're staying on this site for awhile then vvv</p>
       <input class="button" type="button" value="Start audio player" onclick="popitup2();">
     </div>
+    <form>
+      <input type="text" name="search" placeholder="Search Games...">
+    </form>
     <div id="topgames">
       <p><b>Top games:</b></p>
       <div class="row">
