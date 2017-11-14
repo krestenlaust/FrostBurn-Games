@@ -74,11 +74,13 @@ h1 {
     </div>
   </head>
   <script> //Quick runs
-  var cookie = document.cookie;
+  var headerstate = getCookie("headerdisabled");
+  //var cookie = document.cookie;
   console.log(cookie);
-  if(cookie=="headerdisabled=true"){
+  if(headerstate=="true"){
     var x = document.getElementById("header");
     x.style.display = "none";
+    console.log("True is right")
   }
   </script>
   <body>
