@@ -90,7 +90,30 @@ body {
 <html>
   <link rel="icon" href="logoVersion3.png" type="image/x-icon"/>
   <title>FrostBurn Games</title>
-
+  <!-- NOTE: Cookie banner here -->
+  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+  <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+  <script>
+  window.addEventListener("load", function(){
+  window.cookieconsent.initialise({
+    "palette": {
+      "popup": {
+        "background": "#252e39"
+      },
+      "button": {
+        "background": "#14a7d0"
+      }
+    },
+    "theme": "edgeless",
+    "position": "bottom-right",
+    "content": {
+      "message": "I like cookies and so do my website that is why it uses cookies.",
+      "link": "Learn more about cookies",
+      "href": "http://allrecipes.com/recipes/362/desserts/cookies/"
+    }
+  })});
+  </script>
+  <!-- NOTE: Cookie banner ends here -->
   <head>
     <div class="sticky" id="header"> <!-- NOTE !!!HEADER HERE!!! (I keep forgetting where I place it) -->
       <input type="image" src="logoVersion3.png" onclick="returnm();" style="width:60px;height:60px;float: left" />
