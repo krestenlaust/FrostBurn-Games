@@ -51,13 +51,15 @@ h1 {
     display: table;
     clear: both;
 }
-@media (max-width:600px) {
+@media (max-width:600px) { /* Resizes the rows depending on screen size(mobile support) */
     .games {
         width: 100%;
     }
 }
-input[type=text] { /* Search Field */
-    width: 205px; /* NOTE: 130px */
+
+/* Search field code
+input[type=text] {  Comment: Search Field
+    width: 205px; Comment: 130px
     box-sizing: border-box;
     border: 2px solid #ccc;
     border-radius: 4px;
@@ -73,7 +75,9 @@ input[type=text] { /* Search Field */
 }
 input[type=text]:focus {
     width: 98%;
-}
+}*/
+
+
 /* Side blank bars
 body {
   background: white;
@@ -90,7 +94,7 @@ body {
 <html>
   <link rel="icon" href="logoVersion3.png" type="image/x-icon"/>
   <title>FrostBurn Games</title>
-  <!-- NOTE: Cookie banner here -->
+  <!-- NOTE: Cookie banner here made with: https://cookieconsent.insites.com/ -->
   <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
   <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
   <script>
@@ -139,9 +143,10 @@ body {
     <input class="button" id="gamelistbutton" type="button" value="Gamelist" onclick="gamelist();" />
     <!-- <a href="gamelist.html">Game List</a> -->
     <input class="button" id="toggleheader" type="button" value="Toggle Header" onclick="toggleheader();" />
+    <input id="audioplayerbtn" class="button" type="button" value="Start audio player" onclick="popitup2();">
     <div>
-      <p>If you're staying on this site for awhile then vvv</p>
-      <input class="button" type="button" value="Start audio player" onclick="popitup2();">
+      <p>Go ahead, find a game.</p>
+
     </div>
 <!--
     <form>
