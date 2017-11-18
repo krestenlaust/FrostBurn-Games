@@ -180,6 +180,13 @@ if(cp=='game=sydneyshark'){
   document.getElementById('title').innerHTML = '<h1>Sydney Shark</h1>'
   var runcorrect = true
 }
+if(cp=='game=superstacker'){
+  console.log("Loading Super Stacker")
+  document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="https://github.com/kres0345/swfgames/blob/master/super-stacker-2-3141.swf"></object>'
+  document.getElementById('description').innerHTML = "<p><b>This game is made by Game dev name.</b> Description.</p>"
+  document.getElementById('title').innerHTML = '<h1>Super Stacker</h1>'
+  var runcorrect = true
+}
 if(cp=='game=template'){
   console.log("Loading Dolphin Olympics 2")
   document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="games/swf/dolphin-olympics-2-2019.swf"></object>'
