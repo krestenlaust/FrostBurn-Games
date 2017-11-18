@@ -212,6 +212,13 @@ if(cp=='game=superstacker2'){
   document.getElementById('title').innerHTML = '<h1>Super Stacker 2</h1>'
 	document.getElementById('tabtitle').innerHTML = "Super Stacker 2 - FrostBurn Games"
   var runcorrect = true
+}//bubble-tanks-2-1920.swf
+if(cp=='game=bubbletanks2'){
+  console.log("Loading Bubble Tanks 2")
+  document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="https://cdn.rawgit.com/kres0345/swfgames/f12d948d/super-stacker-2-3141.swf"></object>'
+  document.getElementById('description').innerHTML = "<p><b>This game is made by HeroInteractive.</b> Description.</p>"
+  document.getElementById('title').innerHTML = '<h1>Bubble Tanks 2</h1>'
+  var runcorrect = true
 }
 if(cp=='game=template'){
   console.log("Loading Dolphin Olympics 2")
