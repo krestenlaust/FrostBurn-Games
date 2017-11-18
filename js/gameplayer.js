@@ -3,6 +3,7 @@ if(cp=='game=strikeforceheroes'){
 	document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="games/swf/strike-force-heroes-13367.swf"></object>'
 	document.getElementById('description').innerHTML = "<p><b>This game is made by JuiceTin.</b> This game forms childhoods. It's amazing.</p>"
 	document.getElementById('title').innerHTML = '<h1>Strike Force Heroes</h1>'
+	document.getElementById('tabtitle').innerHTML = "Strike Force Heroes - FrostBurn Games"
 	var runcorrect = true
 }
 if(cp=='game=strikeforceheroes2'){
@@ -10,6 +11,7 @@ if(cp=='game=strikeforceheroes2'){
 	document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="games/swf/strike-force-heroes--14775.swf"></object>'
 	document.getElementById('title').innerHTML = '<h1>Strike Force Heroes 2</h1>'
 	document.getElementById('description').innerHTML = '<p><b>This game is made by JuiceTin.</b> This game is also a childhood forming game.</p>'
+	document.getElementById('tabtitle').innerHTML = "Strike Force Heroes 2 - FrostBurn Games"
 	var runcorrect = true
 }
 if(cp=='game=strikeforceheroes3'){
@@ -17,6 +19,7 @@ if(cp=='game=strikeforceheroes3'){
 	document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="games/swf/strike-force-heroes--17706.swf"></object>'
 	document.getElementById('description').innerHTML = '<p><b>This game is made by JuiceTin.</b> This game is simply the last game. The last games are not always as good as the first 1.</p>'
 	document.getElementById('title').innerHTML = '<h1>Strike Force Heroes 3</h1>'
+	document.getElementById('tabtitle').innerHTML = "Strike Force Heroes 3 - FrostBurn Games"
 	var runcorrect = true
 }
 if(cp=='game=stickfigurebadminton2'){
@@ -24,6 +27,7 @@ if(cp=='game=stickfigurebadminton2'){
 	document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="games/swf/StickBadmintonFinal.swf"></object>'
 	document.getElementById('description').innerHTML = '<p><b>This game is made by EffingGames.</b> Stick Figure Badminton 2 is a good game for 1v1 between friends.</p>'
 	document.getElementById('title').innerHTML = '<h1>Stick Figure Badminton 2</h1>'
+	document.getElementById('tabtitle').innerHTML = "Stick Figure Badminton 2 - FrostBurn Games"
 	var runcorrect = true
 }
 if(cp=='game=stickfigurebadminton3'){
@@ -31,6 +35,7 @@ if(cp=='game=stickfigurebadminton3'){
 	document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="games/swf/StickBadminton3Final.swf"></object>'
 	document.getElementById('description').innerHTML = '<p><b>This game is made by EffingGames.</b> Stick Figure Badminton 3 is a great game for an 1v1 between friends too.</p>'
 	document.getElementById('title').innerHTML = '<h1>Stick Figure Badminton 3</h1>'
+	document.getElementById('tabtitle').innerHTML = "Stick Figure Badminton 3 - FrostBurn Games"
 	var runcorrect = true
 }
 if(cp=='game=raze'){
@@ -38,6 +43,7 @@ if(cp=='game=raze'){
 	document.getElementById('gameplayer').innerHTML = '<object width="700" height="600" data="games/swf/raze-5395.swf"></object>'
 	document.getElementById('description').innerHTML = '<p><b>This game is made by JuiceTin.</b> This is also a childhood forming game.</p>'
 	document.getElementById('title').innerHTML = '<h1>Raze</h1>'
+	document.getElementById('tabtitle').innerHTML = "Strike Force Heroes - FrostBurn Games"
 	var runcorrect = true
 }
 if(cp=='game=raze2'){
@@ -45,6 +51,7 @@ if(cp=='game=raze2'){
 	document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="games/swf/raze-2-12275.swf"></object>'
 	document.getElementById('description').innerHTML = '<p><b>This game is made by JuiceTin.</b> Raze 2 is an even better game than the first(in my opinion).</p>'
 	document.getElementById('title').innerHTML = '<h1>Raze 2</h1>'
+	document.getElementById('tabtitle').innerHTML = "Raze 2 - FrostBurn Games"
 	var runcorrect = true
 }
 if(cp=='game=raze3'){
@@ -52,6 +59,7 @@ if(cp=='game=raze3'){
 	document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="games/swf/raze-3-15979.swf"></object>'
 	document.getElementById('description').innerHTML = "<p><b>This game is made by JuiceTin.</b> Raze 3 is the last game in the series so it isn't so great(in my opinion).</p>"
 	document.getElementById('title').innerHTML = '<h1>Raze 3</h1>'
+	document.getElementById('tabtitle').innerHTML = "Raze 3 - FrostBurn Games"
 	var runcorrect = true
 }
 if(cp=='game=strikeforceheroesnotdoppler'){
@@ -59,6 +67,7 @@ if(cp=='game=strikeforceheroesnotdoppler'){
 	document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="games/swf/strikeforceheroes.swf"></object>'
 	document.getElementById('description').innerHTML = "<p><b>This game is made by JuiceTin.</b> This game forms childhoods. It's amazing. NotDoppler's version.</p>"
 	document.getElementById('title').innerHTML = '<h1>Strike Force Heroes(NotDoppler)</h1>'
+	document.getElementById('tabtitle').innerHTML = "Strike Force Heroes - FrostBurn Games"
 	var runcorrect = true
 }
 if(cp=='game=knightmaretower'){
@@ -66,6 +75,7 @@ if(cp=='game=knightmaretower'){
 	document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="games/swf/knightmare-tower-13831.swf"></object>'
 	document.getElementById('description').innerHTML = "<p><b>This game is made by JuicyBeast.</b> Don't know this game.</p>"
 	document.getElementById('title').innerHTML = '<h1>Knightmare Tower</h1>'
+	document.getElementById('tabtitle').innerHTML = "Knightmare Tower - FrostBurn Games"
 	var runcorrect = true
 }
 if(cp=='game=zombotron'){
@@ -73,6 +83,7 @@ if(cp=='game=zombotron'){
 	document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="games/swf/zombotron-12000.swf"></object>'
 	document.getElementById('description').innerHTML = "<p><b>This game is made by AntKarlov.</b> A game requested by a friend.</p>"
 	document.getElementById('title').innerHTML = '<h1>Zombotron</h1>'
+	document.getElementById('tabtitle').innerHTML = "Zombotron - FrostBurn Games"
 	var runcorrect = true
 }
 if(cp=='game=zombotron2'){
@@ -80,6 +91,7 @@ if(cp=='game=zombotron2'){
   document.getElementById('gameplayer').innerHTML = '<object width="650" height="480" data="games/swf/zombotron-2-13457.swf"></object>'
   document.getElementById('description').innerHTML = "<p><b>This game is made by AntKarlov.</b> A game requested by a friend.</p>"
   document.getElementById('title').innerHTML = '<h1>Zombotron 2</h1>'
+	document.getElementById('tabtitle').innerHTML = "Zombotron 2 - FrostBurn Games"
   var runcorrect = true
 }
 if(cp=='game=plazmaburst2'){
@@ -87,6 +99,7 @@ if(cp=='game=plazmaburst2'){
   document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="games/swf/pb2_re34.swf"></object>'
   document.getElementById('description').innerHTML = "<p><b>This game is made by Eric Gurt.</b> This is a really great game.</p>"
   document.getElementById('title').innerHTML = '<h1>Plazma Burst 2</h1>'
+	document.getElementById('tabtitle').innerHTML = "Plazma Burst 2 - FrostBurn Games"
   var runcorrect = true
 }
 if(cp=='game=hauntthehouse'){
@@ -94,6 +107,7 @@ if(cp=='game=hauntthehouse'){
   document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="games/swf/haunt-the-house-7195.swf"></object>'
   document.getElementById('description').innerHTML = "<p><b>This game is made by SuperFlashBros.</b> It is a decent game, maybe at little hard.</p>"
   document.getElementById('title').innerHTML = '<h1>Haunt The House</h1>'
+	document.getElementById('tabtitle').innerHTML = "Haunt the House - FrostBurn Games"
   var runcorrect = true
 }
 if(cp=='game=ageofwar'){
@@ -101,6 +115,7 @@ if(cp=='game=ageofwar'){
   document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="games/swf/age-of-war-616.swf"></object>'
   document.getElementById('description').innerHTML = "<p><b>This game is made by louissi.</b> This game is about defending your base while attacking the enemy base and you slowly advance in history.</p>"
   document.getElementById('title').innerHTML = '<h1>Age of War</h1>'
+	document.getElementById('tabtitle').innerHTML = "Age of War - FrostBurn Games"
   var runcorrect = true
 }//
 if(cp=='game=idlesword'){
@@ -108,6 +123,7 @@ if(cp=='game=idlesword'){
   document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="games/swf/idle-sword-17913.swf"></object>'
   document.getElementById('description').innerHTML = "<p><b>This game is made by laFunk.</b> Requested game.</p>"
   document.getElementById('title').innerHTML = '<h1>Idle Sword</h1>'
+	document.getElementById('tabtitle').innerHTML = "Idle Sword - FrostBurn Games"
   var runcorrect = true
 }//
 if(cp=='game=flight'){
@@ -115,6 +131,7 @@ if(cp=='game=flight'){
   document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="games/swf/flight-7598.swf"></object>'
   document.getElementById('description').innerHTML = "<p><b>This game is made by Krin.</b> About flying a paper plane?.</p>"
   document.getElementById('title').innerHTML = '<h1>Flight</h1>'
+	document.getElementById('tabtitle').innerHTML = "Flight - FrostBurn Games"
   var runcorrect = true
 }//jacksmith-14015.swf
 if(cp=='game=jacksmith'){
@@ -122,6 +139,7 @@ if(cp=='game=jacksmith'){
   document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="games/swf/jacksmith-14015.swf"></object>'
   document.getElementById('description').innerHTML = "<p><b>This game is made by Flipline.</b> Requested.</p>"
   document.getElementById('title').innerHTML = '<h1>Jack Smith</h1>'
+	document.getElementById('tabtitle').innerHTML = "JackSmith - FrostBurn Games"
   var runcorrect = true
 }//
 if(cp=='game=cyclomaniacs2'){
@@ -129,6 +147,7 @@ if(cp=='game=cyclomaniacs2'){
   document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="games/swf/cyclomaniacs-2-12478.swf"></object>'
   document.getElementById('description').innerHTML = "<p><b>This game is made by TurboNUKE.</b> Requested game.</p>"
   document.getElementById('title').innerHTML = '<h1>Cyclomaniacs 2</h1>'
+	document.getElementById('tabtitle').innerHTML = "Cyclomaniacs 2 - FrostBurn Games"
   var runcorrect = true
 }
 if(cp=='game=cyclomaniacs'){
@@ -136,6 +155,7 @@ if(cp=='game=cyclomaniacs'){
   document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="games/swf/cyclomaniacs-4355.swf"></object>'
   document.getElementById('description').innerHTML = "<p><b>This game is made by TurboNUKE.</b> Requested game.</p>"
   document.getElementById('title').innerHTML = '<h1>Cyclomaniacs</h1>'
+	document.getElementById('tabtitle').innerHTML = "Cyclomaniacs - FrostBurn Games"
   var runcorrect = true
 }
 if(cp=='game=dolphinolympics2'){
@@ -143,6 +163,7 @@ if(cp=='game=dolphinolympics2'){
   document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="games/swf/dolphin-olympics-2-2019.swf"></object>'
   document.getElementById('description').innerHTML = "<p><b>This game is made by arawkins.</b> Dolphin olympics?.</p>"
   document.getElementById('title').innerHTML = '<h1>Dolphin Olympics 2</h1>'
+	document.getElementById('tabtitle').innerHTML = "Dolphin Olympics 2 - FrostBurn Games"
   var runcorrect = true
 }
 if(cp=='game=worldbasketcup'){
@@ -150,6 +171,7 @@ if(cp=='game=worldbasketcup'){
   document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="games/swf/World_Basket_Cup.swf"></object>'
   document.getElementById('description').innerHTML = "<p><b>This game is made by Unknown creator.</b> A game about Basketball(I think).</p>"
   document.getElementById('title').innerHTML = '<h1>World Basket Cup</h1>'
+	document.getElementById('tabtitle').innerHTML = "World Basket Cup - FrostBurn Games"
   var runcorrect = true
 }//
 if(cp=='game=armormayhemme'){
@@ -157,6 +179,7 @@ if(cp=='game=armormayhemme'){
   document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="games/swf/armor-mayhem-map-editor.swf"></object>'
   document.getElementById('description').innerHTML = "<p><b>This editor is made by louissi.</b> It creates maps for Armor Mayhem.</p>"
   document.getElementById('title').innerHTML = '<h1>Armor Mayhem Map Editor</h1>'
+	document.getElementById('tabtitle').innerHTML = "Armor Mayhem Map Editor - FrostBurn Games"
   var runcorrect = true
 }
 if(cp=='game=armormayhem'){
@@ -164,6 +187,7 @@ if(cp=='game=armormayhem'){
   document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="games/swf/armor-mayhem-10215.swf"></object>'
   document.getElementById('description').innerHTML = "<p><b>This game is made by louissi.</b> This is a great game, there should maybe be more weapons but a great game.</p>"
   document.getElementById('title').innerHTML = '<h1>Armor Mayhem</h1>'
+	document.getElementById('tabtitle').innerHTML = "Armor Mayhem - FrostBurn Games"
   var runcorrect = true
 }
 if(cp=='game=ageofwar2'){
@@ -178,13 +202,15 @@ if(cp=='game=sydneyshark'){
   document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="games/swf/sydney-shark-5734.swf"></object>'
   document.getElementById('description').innerHTML = "<p><b>This game is made by Wiesi.</b> A game requested.</p>"
   document.getElementById('title').innerHTML = '<h1>Sydney Shark</h1>'
+	document.getElementById('tabtitle').innerHTML = "Sydney Shark - FrostBurn Games"
   var runcorrect = true
 }
 if(cp=='game=superstacker'){
   console.log("Loading Super Stacker")
-  document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="https://github.com/kres0345/swfgames/blob/master/super-stacker-2-3141.swf"></object>'
+  document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" src="https://github.com/kres0345/swfgames/blob/master/super-stacker-2-3141.swf"></object>'
   document.getElementById('description').innerHTML = "<p><b>This game is made by Game dev name.</b> Description.</p>"
   document.getElementById('title').innerHTML = '<h1>Super Stacker</h1>'
+	document.getElementById('tabtitle').innerHTML = "Super Stacker - FrostBurn Games"
   var runcorrect = true
 }
 if(cp=='game=template'){
