@@ -177,7 +177,7 @@ if(cp=='game=worldbasketcup'){
 if(cp=='game=armormayhemme'){
   console.log("Loading Armor Mayhem Map Editor")
   document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="games/swf/armor-mayhem-map-editor.swf"></object>'
-  document.getElementById('description').innerHTML = "<p><b>This editor is made by louissi.</b> It creates maps for Armor Mayhem.</p>"
+  document.getElementById('description').innerHTML = "<p><b>This editor is made by louissi.</b> This is really not a game it is a map editor for the game <a href='https://armorgames.com/play/10215/armor-mayhem'>Armor Mayhem</a>. Goto armor games and play it if you are going strait for the action.</p>"
   document.getElementById('title').innerHTML = '<h1>Armor Mayhem Map Editor</h1>'
 	document.getElementById('tabtitle').innerHTML = "Armor Mayhem Map Editor - FrostBurn Games"
   var runcorrect = true
@@ -205,12 +205,12 @@ if(cp=='game=sydneyshark'){
 	document.getElementById('tabtitle').innerHTML = "Sydney Shark - FrostBurn Games"
   var runcorrect = true
 }
-if(cp=='game=superstacker'){
+if(cp=='game=superstacker2'){
   console.log("Loading Super Stacker")
-  document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" src="https://github.com/kres0345/swfgames/blob/master/super-stacker-2-3141.swf"></object>'
-  document.getElementById('description').innerHTML = "<p><b>This game is made by Game dev name.</b> Description.</p>"
-  document.getElementById('title').innerHTML = '<h1>Super Stacker</h1>'
-	document.getElementById('tabtitle').innerHTML = "Super Stacker - FrostBurn Games"
+  document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="https://cdn.rawgit.com/kres0345/swfgames/85dea0a9/super-stacker-2-3141.swf"></object>'
+  document.getElementById('description').innerHTML = "<p><b>This game is made by inXile_Ent.</b> This is about stacking selected amount of block without them tilting within a certain amount of time and if they tilt you lose.</p>"
+  document.getElementById('title').innerHTML = '<h1>Super Stacker 2</h1>'
+	document.getElementById('tabtitle').innerHTML = "Super Stacker 2 - FrostBurn Games"
   var runcorrect = true
 }
 if(cp=='game=template'){
