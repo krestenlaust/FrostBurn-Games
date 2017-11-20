@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="css/headermenu.css">
+<link rel="stylesheet" type="text/css" href="css/footer.css">
+<link rel="stylesheet" type="text/css" href="css/team.css">
+<link rel="icon" href="logoVersion3.png" type="image/x-icon"/>
+
+<title>FrostBurn Games</title>
+<head>
+  <div class="sticky" id="header"> <!-- NOTE !!!HEADER HERE!!! (I keep forgetting where I place it) -->
+    <input type="image" src="logoVersion3.png" onclick="returnm();" style="width:60px;height:60px;float: left" />
+    <p><b>Welcome to FrostBurn Games</b></p>
+    <ul>
+      <li><a href="index.html">Frontpage</a></li>
+      <li><a href="account.html">Local-settings</a></li>
+      <li><a href="gamelist.html">Gamelist</a></li>
+    </ul>
+  </div>
+</head>
+<body>
+<h1>The development team</h1>
+<p>Programmer - Kresten Laust</p>
+</body>
+<script> //Quick runs
+var cookies = document.cookie;
+if(cookies == "headerdisabled=true"){
+  var x = document.getElementById("header");
+  x.style.display = "none";
+  console.log("Header disabled")
+}
+</script>
+<script>
+function returnm() {
+  window.location.href = "index.html";
+}
+</script>
