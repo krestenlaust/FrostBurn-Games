@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="../css/headermenu.css">
+<link rel="stylesheet" type="text/css" href="../css/footer.css">
+<style>
+
+div.sticky {
+  position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+}
+p {
+  font-family: sans-serif;
+}
+h1 {
+  font-family: sans-serif;
+}
+</style>
+<html>
+<link rel="icon" href="../logoVersion3.png" type="image/x-icon"/>
+<title>FrostBurn Games</title>
+<head>
+  <div class="sticky" id="header"> <!-- NOTE !!!HEADER HERE!!! (I keep forgetting where I place it) -->
+    <input type="image" src="../logoVersion3.png" onclick="returnm();" style="width:60px;height:60px;float: left" />
+    <p><b>Welcome to FrostBurn Games</b></p>
+    <ul>
+      <li><a href="../index.html">Frontpage</a></li>
+      <li><a href="../account.html">Local-settings</a></li>
+      <li><a href="../gamelist.html">Gamelist</a></li>
+    </ul>
+  </div>
+</head>
+<script> //Quick runs
+var cookies = document.cookie;
+if(cookies == "headerdisabled=true"){
+  var x = document.getElementById("header");
+  x.style.display = "none";
+  console.log("Header disabled")
+}
+</script>
+<noscript>Sorry, your browser does not support JavaScript, please use a suitable browser instead like Chrome</noscript>
+<body>
+<h1 style="text-align:center;">Benji Clicker</h1>
+<!--<p><i>Remeber to allow insecure scripts</i></p>-->
+<p>Made by <b>KRESTEN</b></p>
+<iframe allowtransparency="true" width="585" height="502" src="https://scratch.mit.edu/projects/embed/88056240/?autostart=false" frameborder="0" allowfullscreen></iframe>
+<div id="footer"> <!-- !!!FOOTER HERE!!! (I keep forgetting where I place it) -->
+  <p><b><a href="https://github.com/kres0345/FrostBurn-Games/issues/new">Request a game?</a></b>, <b><a href="https://github.com/kres0345/FrostBurn-Games/issues/new">Report an error</a></b> or <b><a href="https://github.com/kres0345/FrostBurn-Games/projects/1">Follow development</a></b> website made by <a href="https://twitter.com/Kres0345?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">@Kres0345</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>, <i>Tip of the load:</i></p><p id="randomtip"></p>
+</div>
+<script type="text/javascript" src="../js/randomtip.js"></script>
+<script>
+function returnm() {
+  window.location.href = "../index.html";
+}
+</script>
+</body>
+</html>
