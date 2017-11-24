@@ -227,6 +227,13 @@ if(cp=='game=happywheels'){
   document.getElementById('title').innerHTML = '<h1>Happy Wheels</h1>'
   var runcorrect = true
 }
+if(cp=='game=thumbfighter'){
+  console.log("Loading Thumb Fighter")
+  document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="https://cdn.rawgit.com/kres0345/swfgames/b2c82b62/thumb_fighter.swf"></object>'
+  document.getElementById('description').innerHTML = "<p><b>This game is made by Someone.</b> Description.</p>"
+  document.getElementById('title').innerHTML = '<h1>Thumb Fighter</h1>'
+  var runcorrect = true
+}//
 if(cp=='game=template'){
   console.log("Loading Dolphin Olympics 2")
   document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="games/swf/dolphin-olympics-2-2019.swf"></object>'
