@@ -221,10 +221,10 @@ if(cp=='game=bubbletanks2'){
   var runcorrect = true
 }
 if(cp=='game=happywheels'){
-  console.log("Loading Bubble Tanks 2")
+  console.log("Loading Happy Wheels")
   document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="https://cdn.rawgit.com/kres0345/swfgames/7af10391/happywheels.swf"></object>'
-  document.getElementById('description').innerHTML = "<p><b>This game is made by HeroInteractive.</b> Description.</p>"
-  document.getElementById('title').innerHTML = '<h1>Bubble Tanks 2</h1>'
+  document.getElementById('description').innerHTML = "<p><b>This game is made by Someone.</b> Description.</p>"
+  document.getElementById('title').innerHTML = '<h1>Happy Wheels</h1>'
   var runcorrect = true
 }
 if(cp=='game=template'){
