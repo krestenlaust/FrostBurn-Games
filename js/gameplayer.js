@@ -220,11 +220,18 @@ if(cp=='game=bubbletanks2'){
   document.getElementById('title').innerHTML = '<h1>Bubble Tanks 2</h1>'
   var runcorrect = true
 }
-if(cp=='game=happywheels'){
-  console.log("Loading Happy Wheels")
-  document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="https://cdn.rawgit.com/kres0345/swfgames/7af10391/happywheels.swf"></object>'
-  document.getElementById('description').innerHTML = "<p><b>This game is made by Someone.</b> Description.</p>"
-  document.getElementById('title').innerHTML = '<h1>Happy Wheels</h1>'
+if(cp=='game=growtower'){
+  console.log("Loading Grow Tower")
+  document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="https://cdn.rawgit.com/kres0345/swfgames/deb93996/grow-tower.swf"></object>'
+  document.getElementById('description').innerHTML = "<p><b>This game is made by someone awesome.</b> Description.</p>"
+  document.getElementById('title').innerHTML = '<h1>Grow Tower</h1>'
+  var runcorrect = true
+}
+if(cp=='game=learntofly'){
+  console.log("Loading Learn To Fly")
+  document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="https://cdn.rawgit.com/kres0345/swfgames/deb93996/learn-to-fly-3789.swf"></object>'
+  document.getElementById('description').innerHTML = "<p><b>This game is made by lightbringer777.</b> An amazing game about making a penguin fly.</p>"
+  document.getElementById('title').innerHTML = '<h1>Learn To Fly</h1>'
   var runcorrect = true
 }
 if(cp=='game=thumbfighter'){

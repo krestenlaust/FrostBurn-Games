@@ -1,0 +1,5 @@
+[
+null,
+{"id":1,"battlerName":"PascalBattler","characterIndex":0,"characterName":"PascalWalk","classId":1,"equips":[0,0,0,0,0],"faceIndex":0,"faceName":"PascalFace","traits":[],"initialLevel":1,"maxLevel":99,"name":"Marcel","nickname":"Pascal","note":"","profile":"Theres a really small chance he will steal your bike."},
+{"id":2,"battlerName":"Bike Battler","characterIndex":0,"characterName":"Bike Walk","classId":1,"equips":[0,0,0,0,0],"faceIndex":0,"faceName":"Bike Face","traits":[],"initialLevel":1,"maxLevel":99,"name":"Bike","nickname":"Bike","note":"Bike is a charactor.","profile":"Bike is your old friend, he got stolen as a kid. He used to call him \"Tricycle\" as a kid."}
+]
