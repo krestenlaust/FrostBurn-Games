@@ -1,6 +1,6 @@
 [
 null,
 {"id":1,"expanded":true,"name":"Tutorial","order":1,"parentId":0,"scrollX":819,"scrollY":453},
-{"id":2,"expanded":true,"name":"Overworld","order":2,"parentId":1,"scrollX":811,"scrollY":507},
-{"id":3,"expanded":false,"name":"Frostworld","order":3,"parentId":2,"scrollX":819,"scrollY":453}
+{"id":2,"expanded":true,"name":"Overworld","order":2,"parentId":1,"scrollX":832,"scrollY":640},
+{"id":3,"expanded":false,"name":"Frostworld","order":3,"parentId":2,"scrollX":832,"scrollY":640}
 ]

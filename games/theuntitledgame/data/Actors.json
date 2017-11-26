@@ -1,5 +1,6 @@
 [
 null,
-{"id":1,"battlerName":"PascalBattler","characterIndex":0,"characterName":"PascalWalk","classId":1,"equips":[0,0,0,0,0],"faceIndex":0,"faceName":"PascalFace","traits":[],"initialLevel":1,"maxLevel":99,"name":"Pascal","nickname":"Pascal","note":"","profile":"Theres a really small chance he will steal your bike."},
-{"id":2,"battlerName":"Bike Battler","characterIndex":0,"characterName":"Bike Walk","classId":1,"equips":[0,0,0,0,0],"faceIndex":0,"faceName":"Bike Face","traits":[],"initialLevel":1,"maxLevel":99,"name":"Bike","nickname":"Bike","note":"Bike is a charactor.","profile":"Bike is your old friend, he got stolen as a kid. He used to call him \"Tricycle\" as a kid."}
+{"id":1,"battlerName":"PascalBattler","characterIndex":0,"characterName":"PascalWalk","classId":1,"equips":[0,0,0,0,0],"faceIndex":0,"faceName":"PascalFace","traits":[],"initialLevel":1,"maxLevel":99,"name":"Pascal","nickname":"Pascal","note":"","profile":"There's a really small chance he will steal your bike.\nAnd a large chance he will kick butt."},
+{"id":2,"battlerName":"Bike Battler","characterIndex":0,"characterName":"Bike Walk","classId":4,"equips":[0,0,0,0,0],"faceIndex":0,"faceName":"Bike Face","traits":[],"initialLevel":1,"maxLevel":99,"name":"Bike","nickname":"Bike","note":"Bike is a charactor.","profile":"Bike is your old friend, he got stolen as a kid. \nHe used to be called \"Tricycle\" as a kid."},
+{"id":3,"battlerName":"FlubiBattlr","characterIndex":0,"characterName":"FlubiWalk","classId":3,"equips":[0,0,0,0,0],"faceIndex":0,"faceName":"FlubiFace","traits":[],"initialLevel":1,"maxLevel":99,"name":"Flubi","nickname":"Flubi","note":"Flubi is the mage, not much is known about him","profile":"Flubi the mage, that is what we know."}
 ]
