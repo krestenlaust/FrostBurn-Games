@@ -25,3 +25,12 @@ h1 {
   border: 5px solid black;
   text-align: center;
 }
+body {
+  background-color: gray;
+}
+.content {
+  max-width: 1200px;
+  /background: white;
+  padding: 10px;
+  margin: auto;
+}

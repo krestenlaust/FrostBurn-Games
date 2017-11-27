@@ -97,13 +97,18 @@ body {
   /border-width: 5px;
   /border-radius: 6px;
   /box-sizing: border-box;
-  background-color: gray;
+  background-color: #33cccc;
 }
 .content {
   max-width: 1200px;
   /background: white;
   padding: 10px;
   margin: auto;
+}
+@media (max-width:600px) { /* Resizes the rows depending on screen size(mobile support) */
+    .games {
+        width: 100%;
+    }
 }
 </style>
 
@@ -159,7 +164,8 @@ body {
     <!-- <a href="gamelist.html">Game List</a> -->
     <input class="button" id="toggleheader" type="button" value="Toggle Header" onclick="toggleheader();" />
     <input id="audioplayerbtn" class="button" type="button" value="Start audio player" onclick="popitup2();">
-    <p><a href="http://frostburn-games.tk/">Enable SSL(If you feel like)</a></p>
+    <br><br>
+    <a class="button" href="http://frostburn-games.tk" target="_top">Enable SSL(To enable audioplayer)</a>
     <div>
       <p>Go ahead, find a game.</p>
     </div>
