@@ -254,6 +254,14 @@ if(cp=='game=template'){
 	document.getElementById('tabtitle').innerHTML = "Template - FrostBurn Games"
   var runcorrect = true
 }
+if(cp=='game=boxhead2'){
+  console.log("Loading Box Head")
+  document.getElementById('gameplayer').innerHTML = '<object width="645" height="485" data="https://cdn.rawgit.com/kres0345/swfgames/1daec3ae/boxhead_2play.swf"></object>'
+  document.getElementById('description').innerHTML = "<p><b>This game is made by An Awesome Person.</b> Description.</p>"
+  document.getElementById('title').innerHTML = '<h1>Boxhead 2</h1>'
+	document.getElementById('tabtitle').innerHTML = "Boxhead 2 - FrostBurn Games"
+  var runcorrect = true
+}
 else{
 	if(runcorrect==false){
 		document.getElementById('title').innerHTML = '<h1>Error 404 game not found</h1>'
