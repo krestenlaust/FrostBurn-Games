@@ -263,7 +263,7 @@ if(cp=='game=boxhead2'){
   var runcorrect = true
 }
 if(cp=='game=happywheels'){
-  console.log("Loading Box Head")
+  console.log("Loading Happy Wheels")
   document.getElementById('gameplayer').innerHTML = '<object width="645" height="485" data="Happy-Wheels.swf"></object>'
   document.getElementById('description').innerHTML = "<p><b>This game is made by An Awesome Person.</b> Description.</p>"
   document.getElementById('title').innerHTML = '<h1>Happy Wheels</h1>'
