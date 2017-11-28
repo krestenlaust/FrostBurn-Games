@@ -262,6 +262,14 @@ if(cp=='game=boxhead2'){
 	document.getElementById('tabtitle').innerHTML = "Boxhead 2 - FrostBurn Games"
   var runcorrect = true
 }
+if(cp=='game=happywheels'){
+  console.log("Loading Box Head")
+  document.getElementById('gameplayer').innerHTML = '<object width="645" height="485" data="../games/happywheels/Happy-Wheels.swf"></object>'
+  document.getElementById('description').innerHTML = "<p><b>This game is made by An Awesome Person.</b> Description.</p>"
+  document.getElementById('title').innerHTML = '<h1>Happy Wheels</h1>'
+	document.getElementById('tabtitle').innerHTML = "Happy Wheels - FrostBurn Games"
+  var runcorrect = true
+}
 else{
 	if(runcorrect==false){
 		document.getElementById('title').innerHTML = '<h1>Error 404 game not found</h1>'
