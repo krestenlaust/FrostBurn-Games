@@ -264,7 +264,7 @@ if(cp=='game=boxhead2'){
 }
 if(cp=='game=happywheels'){
   console.log("Loading Happy Wheels")
-  document.getElementById('gameplayer').innerHTML = '<object width="645" height="485" data="Happy-Wheels.swf"></object>'
+  document.getElementById('gameplayer').innerHTML = '<iframe width="900" height="700" src="http://www.totaljerkface.com/happy_wheels.tjf"></iframe>'
   document.getElementById('description').innerHTML = "<p><b>This game is made by An Awesome Person.</b> Description.</p>"
   document.getElementById('title').innerHTML = '<h1>Happy Wheels</h1>'
 	document.getElementById('tabtitle').innerHTML = "Happy Wheels - FrostBurn Games"
