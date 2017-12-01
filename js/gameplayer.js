@@ -270,6 +270,14 @@ if(cp=='game=happywheels'){
 	document.getElementById('tabtitle').innerHTML = "Happy Wheels - FrostBurn Games"
   var runcorrect = true
 }
+if(cp=='game=linerider'){
+  console.log("Loading Happy Wheels")
+  document.getElementById('gameplayer').innerHTML = '<object width="645" height="485" data="https://cdn.rawgit.com/kres0345/swfgames/24c23ce3/linerider1.swf"></object>'
+  document.getElementById('description').innerHTML = "<p><b>This game is made by An Awesome Person.</b> Description.</p>"
+  document.getElementById('title').innerHTML = '<h1>Line Rider</h1>'
+	document.getElementById('tabtitle').innerHTML = "Line Rider - FrostBurn Games"
+  var runcorrect = true
+}
 else{
 	if(runcorrect==false){
 		document.getElementById('title').innerHTML = '<h1>Error 404 game not found</h1>'
