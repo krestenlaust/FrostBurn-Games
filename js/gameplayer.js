@@ -192,7 +192,7 @@ if(cp=='game=armormayhem'){
 }
 if(cp=='game=ageofwar2'){
   console.log("Loading Age of War 2")
-  document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="https://cdn.rawgit.com/kres0345/swfgames/86bd817f/age-of-war-2-publicOTM3.swf"></object>'
+  document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="https://cdn.rawgit.com/kres0345/swfgames/91b55565/age-of-war-2-5933.swf"></object>'
   document.getElementById('description').innerHTML = "<p><b>This game is made by louissi.</b> This is a great game.</p>"
   document.getElementById('title').innerHTML = '<h1>Age of War 2</h1>'
 	document.getElementById('tabtitle').innerHTML = "Age of War 2 - FrostBurn Games"
