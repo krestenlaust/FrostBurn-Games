@@ -27,3 +27,12 @@ li a:hover {
     background-color: #4CAF50;
     color: white;
 }
+h1 {
+  font-family: sans-serif;
+  text-align: center;
+
+}
+p {
+  font-family: sans-serif;
+  text-align: center;
+}
