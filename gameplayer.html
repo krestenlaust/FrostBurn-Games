@@ -106,6 +106,7 @@ h1 {
     <script type="text/javascript" src="js/randomtip.js"></script>
   </body>
   <script>
+    console.log("Starting hayFlash");
     var hayFlash = function(a,b){try{a=new ActiveXObject(a+b+'.'+a+b)}catch(e){a=navigator.plugins[a+' '+b]}return!!a}('Shockwave','Flash')
     if(hayFlash) {
       console.log("Flash player is installed");
@@ -114,6 +115,7 @@ h1 {
       console.log("Flash player is not installed: https://get.adobe.com/flashplayer/");
       //document.getElementById('gameplayer').innerHTML = '<p>It appears that you don't have Adobe Flash Player installed, you can install it at: https://get.adobe.com/flashplayer/</p>'
     }
+    console.log("Ending hayFlash");
 
     document.getElementById('closefullscreen').style.visibility = 'hidden';
     document.getElementById('playersizeincrease').style.visibility = 'hidden';
