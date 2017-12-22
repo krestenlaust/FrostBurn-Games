@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
 <link rel="stylesheet" type="text/css" href="css/headermenu.css">
 <link rel="stylesheet" type="text/css" href="css/buttongp.css">
 <link rel="stylesheet" type="text/css" href="css/footer.css">
@@ -81,6 +83,7 @@ h1 {
   </script>
   <!--<link rel="icon" href="logoVersion4.png" type="image/x-icon"/>-->
     <title id="tabtitle">Gameplayer - FrostBurn Games</title>
+    <br><!-- New in update 3.391 -->
   <div id="title">
   	<h1>Game player</h1>
   </div>
@@ -106,17 +109,6 @@ h1 {
     <script type="text/javascript" src="js/randomtip.js"></script>
   </body>
   <script>
-    console.log("Starting hayFlash");
-    var hayFlash = function(a,b){try{a=new ActiveXObject(a+b+'.'+a+b)}catch(e){a=navigator.plugins[a+' '+b]}return!!a}('Shockwave','Flash')
-    if(hayFlash) {
-      console.log("Flash player is installed");
-    }
-    else {
-      console.log("Flash player is not installed: https://get.adobe.com/flashplayer/");
-      //document.getElementById('gameplayer').innerHTML = '<p>It appears that you don't have Adobe Flash Player installed, you can install it at: https://get.adobe.com/flashplayer/</p>'
-    }
-    console.log("Ending hayFlash");
-
     document.getElementById('closefullscreen').style.visibility = 'hidden';
     document.getElementById('playersizeincrease').style.visibility = 'hidden';
     document.getElementById('playersizedecrease').style.visibility = 'hidden';
@@ -182,6 +174,19 @@ h1 {
     var cp = res[1];
   </script>
   <script src="js/gameplayer.js"></script>
+  <script> //Flash detection script by dcicale: https://gist.github.com/dciccale/1116643
+  //Start flash detection
+    var hayFlash = function(a,b){try{a=new ActiveXObject(a+b+'.'+a+b)}catch(e){a=navigator.plugins[a+' '+b]}return!!a}('Shockwave','Flash')
+    if(hayFlash) {
+      console.log("Flash player is installed");
+    }
+    else {
+      console.log("Flash player is not installed: https://get.adobe.com/flashplayer/");
+      //alert("Flash player is not installed: https://get.adobe.com/flashplayer/");
+      document.getElementById('description').innerHTML = "<p><i>It appears that you don't have Adobe Flash Player installed, you can install it at: <a href='https://get.adobe.com/flashplayer/' target='_blank'>https://get.adobe.com/flashplayer/</a>, if the game is working then please report the bug on my <a href='https://github.com/kres0345/FrostBurn-Games/issues/new' target='_blank'>GitHub</a></i></p>"
+    }
+    //End flash detection
+  </script>
   <link rel="icon" href="logoVersion4.png" type="image/x-icon"/>
 </html>
 <!--
