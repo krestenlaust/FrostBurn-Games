@@ -175,6 +175,7 @@ body {
     <div id="topgames">
       <p><b>Top games:</b></p>
       <input type="button" class="button" value="row view" onclick="rowview();" />
+      <input type="button" class="button" value="column view" onclick="columnview();" />
       <div class="row">
         <div class="games"><p class="gamesborder"><image class="tgimages" src="images/zombotron2.png" alt="zombotron" style="width:65px;height:65px" onclick="window.location.href = 'gameplayer.html?game=zombotron2';" /><input class="buttontg" type="button" value="Play Game" onclick="window.location.href = 'gameplayer.html?game=zombotron2';"> Zombotron 2</p></div>
         <div class="games"><p><image class="tgimages" src="images/strikeforceheroes.png" alt="strike force heroes" style="width:65px;height:65px" onclick="window.location.href = 'gameplayer.html?game=strikeforceheroes';" /><input class="buttontg" type="button" value="Play Game" onclick="window.location.href = 'gameplayer.html?game=strikeforceheroes';"> Strike Force Heroes</p></div>
@@ -297,13 +298,14 @@ body {
       //console.log($('html').text());
       var documenthtml01 = document.documentElement.innerHTML;
       console.log(documenthtml01);
-      document.write(documenthtml01+'\n<link rel="stylesheet" type="text/css" href="css/rowview.css">');
-      //console.log($("games").css("width"););
+      //document.write(documenthtml01+'\n<link rel="stylesheet" type="text/css" href="css/rowview.css">');
+      document.write('\n<link rel="stylesheet" type="text/css" href="css/rowview.css">');
     }
     function columnview() {
       var documenthtml01 = document.documentElement.innerHTML;
       console.log(documenthtml01);
-      document.write(documenthtml01+'\n<link rel="stylesheet" type="text/css" href="css/columnview.css">');
+      //document.write(documenthtml01+'\n<link rel="stylesheet" type="text/css" href="css/columnview.css">');
+      document.write('\n<link rel="stylesheet" type="text/css" href="css/columnview.css">');
     }
     </script>
   </body>
