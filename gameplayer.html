@@ -106,6 +106,14 @@ h1 {
     <script type="text/javascript" src="js/randomtip.js"></script>
   </body>
   <script>
+    var hayFlash = function(a,b){try{a=new ActiveXObject(a+b+'.'+a+b)}catch(e){a=navigator.plugins[a+' '+b]}return!!a}('Shockwave','Flash')
+    if(hayFlash) {
+      console.log("Flash player is installed");
+    }
+    else {
+      console.log("Flash player is not installed: https://get.adobe.com/dk/flashplayer/");
+    }
+
     document.getElementById('closefullscreen').style.visibility = 'hidden';
     document.getElementById('playersizeincrease').style.visibility = 'hidden';
     document.getElementById('playersizedecrease').style.visibility = 'hidden';
