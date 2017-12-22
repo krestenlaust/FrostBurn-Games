@@ -90,6 +90,7 @@ h1 {
   <input class="button" id="closefullscreen" type="button" value="Exit Fullscreen" onclick="closefullscreen();" />
   <input class="button" id="clearbackground" type="button" value="Clear BG" onclick="clearbackground();" />
   </div>
+  <object><param /></object>
   <div id="gameplayer"></div> <!-- This is the function that gets changed with url parameter -->
 
   <body>
@@ -141,7 +142,7 @@ h1 {
       document.getElementById('closefullscreen').style.visibility = 'visible'; //shows the close fullscreen button
       document.getElementById('playersizeincrease').style.visibility = 'visible'; //Shows the "scale(+)" button
       document.getElementById('playersizedecrease').style.visibility = 'visible'; //Shows the "scale(-)" button
-      document.getElementById('clearbackground').style.visibility = 'visible'; //Shows the "clear bg" button
+      //document.getElementById('clearbackground').style.visibility = 'visible'; //Shows the "clear bg" button
     }
     function closefullscreen() {
       gameplayer.style.cssText = "text-align: left;" //transform:scale(1.0);
@@ -153,7 +154,7 @@ h1 {
       document.getElementById('footer').style.visibility = 'visible'; //shows the footer
       document.getElementById('playersizeincrease').style.visibility = 'hidden'; //Hides the "scale(+)" button
       document.getElementById('playersizedecrease').style.visibility = 'hidden'; //Hides the "scale(-)" button
-      document.getElementById('clearbackground').style.visibility = 'hidden'; //Hides the "clear bg" button
+      //document.getElementById('clearbackground').style.visibility = 'hidden'; //Hides the "clear bg" button
     }
     function increaseplayer() {
       gameplayer.style.cssText = "text-align:center;vertical-align:middle;transform:scale(1.20);"
