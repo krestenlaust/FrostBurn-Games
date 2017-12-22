@@ -87,7 +87,7 @@ body {
   /border-width: 5px;
   /border-radius: 6px;
   /box-sizing: border-box;
-  background-color: #33cccc;
+  background-color: #277979; /* #33cccc Cyan color */
 }
 .content {
   max-width: 1200px;
@@ -160,9 +160,10 @@ body {
     <input class="button" id="gamelistbutton" type="button" value="Gamelist" onclick="gamelist();" />
     <!-- <a href="gamelist.html">Game List</a> -->
     <input class="button" id="toggleheader" type="button" value="Toggle Header" onclick="toggleheader();" />
-    <input id="audioplayerbtn" class="button" type="button" value="Start audio player" onclick="popitup2();">
+    <input id="audioplayerbtn" class="button" type="button" value="Start audio player" onclick="popitup2();" />
     <br><br>
-    <a class="button" href="http://frostburn-games.tk" target="_top">Enable SSL(To enable audioplayer)</a>
+    <input class="button" id="enablessl" type="button" value="Enable SSL(To enable audioplayer)" onclick="window.location.href = "http://ssl.FrostBurn-Games.com";" target="_top">
+    <a class="button" href="http://ssl.FrostBurn-Games.com" target="_top">Enable SSL(To enable audioplayer)</a>
     <div>
       <p>Go ahead, find a game.</p>
     </div>
@@ -263,9 +264,9 @@ body {
     	var tmp = newwindow2.document;
     	tmp.write('<html><head><title>FrostBurn Audio player</title>');
     	tmp.write('<link rel="stylesheet" href="js.css">');
-    	tmp.write('</head><body><p>This is FrostBurn audio player.</p>');
-    	tmp.write('<p>You can minimize the window to keep focus on your game :-D or:</p>')
-    	tmp.write('<p><a href="javascript:self.close()">Close</a> the popup.</p>');
+    	tmp.write('</head><body><p style="font-family: sans-serif;">This is FrostBurn audio player.</p>');
+    	tmp.write('<p style="font-family: sans-serif;">You can minimize the window to keep focus on your game :-D or:</p>')
+    	tmp.write('<p style="font-family: sans-serif;"><a href="javascript:self.close()">Close</a> the popup.</p>');
     	tmp.write('<audio controls>');
     	tmp.write('<source src="audio/StrikeForceHeroesOSTMainMenuTheme.mp3" type="audio/mpeg">')
     	tmp.write('<source src="audio/OriginalGhostBustersThemeSong.mp3" type="audio/mpeg">')
