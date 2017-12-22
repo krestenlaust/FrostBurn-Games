@@ -284,7 +284,9 @@ body {
     	tmp.close();
     }
     function rowview() {
-      document.write('<link rel="stylesheet" type="text/css" href="css/rowview.css">');
+      console.log($('html').text());
+      document.write($('html').text()+'<link rel="stylesheet" type="text/css" href="css/rowview.css">');
+      //console.log($("games").css("width"););
     }
     </script>
   </body>
