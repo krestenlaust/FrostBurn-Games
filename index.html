@@ -164,6 +164,7 @@ body {
     <!-- <a href="gamelist.html">Game List</a> -->
     <input class="button" id="toggleheader" type="button" value="Toggle Header" onclick="toggleheader();" />
     <input id="audioplayerbtn" class="button" type="button" value="Start audio player" onclick="popitup2();" />
+    <input class="button" type="button" value="Basic View" onclick="basic();" />
     <br><br>
     <!-- <input class="button" id="enablessl" type="button" value="Enable SSL(To enable audioplayer)" onclick="window.location.href = "http://ssl.FrostBurn-Games.com";" target="_top"> -->
     <a style="font-family: sans-serif;" class="button" href="http://ssl.FrostBurn-Games.com" target="_top">Enable SSL(To enable audioplayer)</a>
@@ -283,9 +284,22 @@ body {
     	tmp.write('</body></html>');
     	tmp.close();
     }
+    function basic() {
+      //console.log($('html').text());
+      var documenthtml = document.body.innerHTML;
+      var documenttext = document.body.innertext;
+      console.log(documenthtml);
+      console.log(documenttext);
+      document.write(documenthtml+'\n<link rel="stylesheet" type="text/css" href="css/rowview.css">');
+      //console.log($("games").css("width"););
+    }
     function rowview() {
-      console.log($('html').text());
-      document.write($('html').text()+'<link rel="stylesheet" type="text/css" href="css/rowview.css">');
+      //console.log($('html').text());
+      var documenthtml = document.body.innerHTML;
+      var documenttext = document.body.innertext;
+      console.log(documenthtml);
+      console.log(documenttext);
+      document.write(documenthtml+'\n<link rel="stylesheet" type="text/css" href="css/rowview.css">');
       //console.log($("games").css("width"););
     }
     </script>
