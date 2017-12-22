@@ -173,6 +173,7 @@ body {
     </div>
     <div id="topgames">
       <p><b>Top games:</b></p>
+      <input type="button" class="button" value="row view" onclick="rowview();" />
       <div class="row">
         <div class="games"><p class="gamesborder"><image class="tgimages" src="images/zombotron2.png" alt="zombotron" style="width:65px;height:65px" onclick="window.location.href = 'gameplayer.html?game=zombotron2';" /><input class="buttontg" type="button" value="Play Game" onclick="window.location.href = 'gameplayer.html?game=zombotron2';"> Zombotron 2</p></div>
         <div class="games"><p><image class="tgimages" src="images/strikeforceheroes.png" alt="strike force heroes" style="width:65px;height:65px" onclick="window.location.href = 'gameplayer.html?game=strikeforceheroes';" /><input class="buttontg" type="button" value="Play Game" onclick="window.location.href = 'gameplayer.html?game=strikeforceheroes';"> Strike Force Heroes</p></div>
@@ -265,19 +266,25 @@ body {
     }
     function popitup2() {
     	console.log("Creating audio player window")
-    	newwindow2=window.open('','name','height=200,width=400');
+    	newwindow2=window.open('','name','height=200,width=500');
     	var tmp = newwindow2.document;
     	tmp.write('<html><head><title>FrostBurn Audio player</title>');
     	tmp.write('<link rel="stylesheet" href="js.css">');
+      tmp.write('<link rel="stylesheet" type="text/css" href="css/button.css">')
     	tmp.write('</head><body><p style="font-family: sans-serif;">This is FrostBurn audio player.</p>');
-    	tmp.write('<p style="font-family: sans-serif;">You can minimize the window to keep focus on your game :-D or:</p>')
-    	tmp.write('<p style="font-family: sans-serif;"><a href="javascript:self.close()">Close</a> the popup.</p>');
+    	tmp.write('<p style="font-family: sans-serif;">You can minimize the window to keep focus on your game :-D or:</p>');
+    	//tmp.write('<p style="font-family: sans-serif;"><a href="javascript:self.close()">Close</a> the popup.</p>');
+      tmp.write('<p style="font-family: sans-serif;"><a href="javascript:self.close()">Exit</a> the popup.</p>');
+      tmp.write('<input class="button" id="gamelistbutton" type="button" value="Exit" onclick="javascript:self.close();" />');
     	tmp.write('<audio controls>');
     	tmp.write('<source src="audio/StrikeForceHeroesOSTMainMenuTheme.mp3" type="audio/mpeg">')
     	tmp.write('<source src="audio/OriginalGhostBustersThemeSong.mp3" type="audio/mpeg">')
     	tmp.write('</audio>')
     	tmp.write('</body></html>');
     	tmp.close();
+    }
+    function rowview() {
+      document.write('<link rel="stylesheet" type="text/css" href="css/rowview.css">');
     }
     </script>
   </body>

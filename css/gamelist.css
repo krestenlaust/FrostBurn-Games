@@ -21,12 +21,19 @@ p {
 h1 {
   font-family: sans-serif;
 }
+a {
+  font-family: sans-serif;
+}
 #gamelistgames {
   border: 5px solid black;
   text-align: center;
+  width: 60%;
+  background-color: white;
+  margin: auto;
+
 }
 body {
-  background-color: gray;
+  background-color: #277979; //#626468
 }
 .content {
   max-width: 1200px;

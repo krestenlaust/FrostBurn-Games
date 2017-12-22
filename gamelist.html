@@ -27,22 +27,24 @@
       x.style.display = "none";
       console.log("Header disabled")
     }
-    </script>
+    </script><br>
+    <div style="text-align:center;"> <!-- buttons -->
+      <input class="button" id="toggle header" type="button" value="Toggle Header" onclick="toggleheader();" />
+      <input class="button" id="return to menu" type="button" value="Return to Menu" onclick="returnm();" />
+    </div>
     <h1 id=centertext >Gamelist</h1>
     <div id=centertext ><!--Text on gamelist.html-->
       <p>Right now you can search with CTRL+F</p>
       <p>I havent implemented a search field yet.</p>
+      <br><p><b>Notice: This page is outdated.</b></p>
     </div>
-    <input class="button" id="toggle header" type="button" value="Toggle Header" onclick="toggleheader();" />
-    <input class="button" id="return to menu" type="button" value="Return to Menu" onclick="returnm();" />
-    <p><b>Gamelist:</b></p>
     <div id="footer"> <!-- !!!FOOTER HERE!!! (I keep forgetting where I place it) -->
     	<p><b><a href="https://github.com/kres0345/FrostBurn-Games/issues/new">Request a game?</a></b>, <b><a href="https://github.com/kres0345/FrostBurn-Games/issues/new">Report an error</a></b> or <b><a href="https://github.com/kres0345/FrostBurn-Games/projects/1">Follow development</a></b> website made by kres0345, <i>Tip of the load:</i></p><p id="randomtip"></p>
     </div>
     <script type="text/javascript" src="js/randomtip.js"></script>
   </head>
   <body>
-    <div id="gamelistgames"> <!--New game player-->
+    <div id="gamelistgames"> <!--New game player, legetøj fra--><br>
     	<a href="gameplayer.html?game=strikeforceheroes">Strike Force Heroes</p></a>
       <a href="gameplayer.html?game=strikeforceheroesnotdoppler">Strike Force Heroes(NotDoppler)</p></a>
     	<a href="gameplayer.html?game=strikeforceheroes2">Strike Force Heroes 2</p></a>

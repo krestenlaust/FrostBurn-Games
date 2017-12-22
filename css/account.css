@@ -38,14 +38,30 @@ li a:hover {
 }*/
 #settings {
   border:5px solid red;
+  border-radius: 5px;
   padding: 16px;
+  background-color: white;
+  width: 60%;
+  text-align: center;
+  margin: auto;
 }
 #cookies {
   border:5px solid green;
+  border-radius: 5px;
   padding: 16px;
+  background-color: white;
+  width: 60%;
+  text-align: center;
+  margin: auto;
 }
-#signup {
-  border:5px solid yellow;
+#info {
+  border:5px solid orange;
+  padding: 16px;
+  border-radius: 5px;
+  background-color: white;
+  width: 60%;
+  text-align: center;
+  margin: auto;
 }
 p {
   font-family: sans-serif;
@@ -53,8 +69,12 @@ p {
 h1 {
   font-family: sans-serif;
 }
-.title {
-
+#title {
+  text-align: center;
+  font-family: Ariel;
+}
+body {
+  background-color: #277979;
 }
 
 
