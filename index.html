@@ -295,6 +295,10 @@ body {
     }
     function rowview() {
       //console.log($('html').text());
+      document.cookie = "rowview=true;";
+      if(document.cookie = "rowview" == true){
+        console.log(document.cookie = "rowview");
+      }
       var documenthtml01 = document.documentElement.innerHTML;
       console.log(documenthtml01);
       document.write(documenthtml01+'\n<link rel="stylesheet" type="text/css" href="css/rowview.css">');
