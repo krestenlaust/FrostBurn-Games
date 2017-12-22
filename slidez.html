@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- google meta tags -->
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<meta name="description" content="Slidez is a mobile game based on runner category, our first game." />
+<!-- <meta name="google" content="nositelinkssearchbox" /> -->
+<!-- end google meta tags -->
+<link rel="stylesheet" type="text/css" href="css/headermenu.css">
+<link rel="stylesheet" type="text/css" href="css/button.css">
+<!-- <link rel="stylesheet" type="text/css" href="css/buttontg.css"> -->
+<link rel="stylesheet" type="text/css" href="css/footer.css">
+<style>
+div.sticky {
+  position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+}
+p {
+  font-family: sans-serif;
+}
+h1 {
+  font-family: sans-serif;
+}
+#slidezlogo {
+  border-radius: 6%;
+}
+#interest {
+  border:5px solid purple;
+  border-radius: 6px;
+  background-color: white; /* NOTE: bgcolor */
+}
+#slidez {
+  border:5px solid green;
+  border-radius: 6px;
+  background-color: white; /* NOTE: bgcolor */
+}
+.games {
+  float: left;
+  width: 33.33%;
+  /*width: 25%; */
+  padding: 15px;
+}
+* {
+    box-sizing: border-box;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+@media (max-width:600px) { /* Resizes the rows depending on screen size(mobile support) */
+    .games {
+        width: 100%;
+    }
+}
+
+/* Side blank bars */
+body {
+  /border: solid blue;
+  /border-width: 5px;
+  /border-radius: 6px;
+  /box-sizing: border-box;
+  background-color: #33cccc;
+}
+.content {
+  max-width: 1200px;
+  /background: white;
+  padding: 10px;
+  margin: auto;
+}
+@media (max-width:600px) { /* Resizes the rows depending on screen size(mobile support) */
+    .games {
+        width: 100%;
+    }
+}
+</style>
+<html>
+  <link rel="icon" href="logoVersion4.png" type="image/x-icon"/>
+  <title>FrostBurn Games</title>
+  <!-- NOTE: Cookie banner here made with: https://cookieconsent.insites.com/ -->
+  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+  <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+  <script>
+  window.addEventListener("load", function(){
+  window.cookieconsent.initialise({
+    "palette": {
+      "popup": {
+        "background": "#252e39"
+      },
+      "button": {
+        "background": "#14a7d0"
+      }
+    },
+    "theme": "edgeless",
+    "position": "bottom-right",
+    "content": {
+      "message": "I like cookies and so do my website that is why it uses cookies.",
+      "link": "Learn more about cookies",
+      "href": "http://allrecipes.com/recipes/362/desserts/cookies/"
+    }
+  })});
+  </script>
+  <!-- NOTE: Cookie banner ends here -->
+  <head>
+    <div class="sticky" id="header"> <!-- NOTE !!!HEADER HERE!!! (I keep forgetting where I place it) -->
+      <input type="image" src="logoVersion3.png" onclick="returnm();" style="width:60px;height:60px;float: left" />
+      <p><b>Welcome to FrostBurn Games</b></p>
+      <ul>
+        <li><a class="active" href="index.html">Frontpage</a></li>
+        <li><a href="account.html">Local-settings</a></li>
+        <li><a href="gamelist.html">Gamelist</a></li>
+      </ul>
+    </div>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "ca-pub-6044149035666154",
+        enable_page_level_ads: true
+      });
+    </script>
+  </head>
+  <script> //Quick runs
+  var cookies = document.cookie;
+  if(cookies == "headerdisabled=true"){
+    var x = document.getElementById("header");
+    x.style.display = "none";
+    console.log("Header disabled")
+  }
+  </script>
+  <noscript>Sorry, your browser does not support JavaScript, please use a suitable browser instead like Chrome or Firefox</noscript>
+  <body class="content">
+    <br>
+    <input class="button" id="toggleheader" type="button" value="Toggle Header" onclick="toggleheader();" />
+    <input id="audioplayerbtn" class="button" type="button" value="Start audio player" onclick="popitup2();">
+    <br><br>
+    <div id="slidez" style="text-align:center;">
+      <h1>Slidez - by Frostburn-games </h1>
+      This is our first game,<br>
+      <image id="slidezlogo" src="images/slidez.png" alt="Slidez Logo" style="width:150px;height:150px"/>
+      <p>Slidez is a mobile game about evading obstacles, by jumping over them.</p>
+      <br>
+    <p><b>COMING SOON</b></p>
+      <p><image src="images/GooglePlayStore.png" alt="Google Play Store" style="width:50;height:100px;cursor: pointer" onclick="window.location.href = 'http://www.download.com';" /><image src="images/AppStore1.png" alt="App Store" style="width:50;height:100px;cursor: pointer;" onclick="window.location.href = 'http://www.download.com';" /></p>
+    </div>
+    <div id="footer"> <!-- !!!FOOTER HERE!!! (I keep forgetting where I place it) -->
+    	<p><b><a href="https://github.com/kres0345/FrostBurn-Games/issues/new">Request a game?</a></b>, <b><a href="https://github.com/kres0345/FrostBurn-Games/issues/new">Report an error</a></b> or <b><a href="https://github.com/kres0345/FrostBurn-Games/projects/1">Follow development</a></b> website made by <a href="https://twitter.com/Kres0345?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">@Kres0345</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>, <i>Tip of the load:</i></p><p id="randomtip"></p>
+    </div>
+    <script type="text/javascript" src="js/randomtip.js"></script>
+    <script>
+    function toggleheader() {
+    var x = document.getElementById("header");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+        document.cookie = "headerdisabled=false;";
+        //document.cookie = "headerdisabled=false; expires=Thu, 18 Dec 2018 12:00:00 UTC; path=/";
+        //var cookie = document.cookie;
+        console.log(document.cookie);
+    } else {
+        x.style.display = "none";
+        document.cookie = "headerdisabled=true;";
+        //var cookie = document.cookie;
+        console.log(document.cookie);
+    }
+    }
+    function returnm() {
+      window.location.href = "index.html";
+    }
+    function gamelist() {
+      window.location.href = "gamelist.html";
+    }
+    function popitup2() {
+    	console.log("Creating audio player window")
+    	newwindow2=window.open('','name','height=200,width=400');
+    	var tmp = newwindow2.document;
+    	tmp.write('<html><head><title>FrostBurn Audio player</title>');
+    	tmp.write('<link rel="stylesheet" href="js.css">');
+    	tmp.write('</head><body><p>This is FrostBurn audio player.</p>');
+    	tmp.write('<p>You can minimize the window to keep focus on your game :-D or:</p>')
+    	tmp.write('<p><a href="javascript:self.close()">Close</a> the popup.</p>');
+    	tmp.write('<audio controls>');
+    	tmp.write('<source src="audio/StrikeForceHeroesOSTMainMenuTheme.mp3" type="audio/mpeg">')
+    	tmp.write('<source src="audio/OriginalGhostBustersThemeSong.mp3" type="audio/mpeg">')
+    	tmp.write('</audio>')
+    	tmp.write('</body></html>');
+    	tmp.close();
+    }
+    </script>
+  </body>
+</html>
+
+<!--
+Secret messeage:
+01101000 01100101 01101100 01101100 01101111 00100000 01101000 01101111 01110111 00100000 01100001 01110010 01100101 00100000 01111001 01101111 01110101 01110010 00100000 01100100 01100001 01111001 00111111
+-->
