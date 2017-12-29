@@ -182,6 +182,7 @@ if(cp=='game=armormayhemme'){
 	document.getElementById('tabtitle').innerHTML = "Armor Mayhem Map Editor - FrostBurn Games"
   var runcorrect = true
 }
+/*
 if(cp=='game=armormayhem'){
   console.log("Loading Armor Mayhem")
   document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="games/swf/armor-mayhem-10215.swf"></object>'
@@ -189,7 +190,7 @@ if(cp=='game=armormayhem'){
   document.getElementById('title').innerHTML = '<h1>Armor Mayhem</h1>'
 	document.getElementById('tabtitle').innerHTML = "Armor Mayhem - FrostBurn Games"
   var runcorrect = true
-}
+}*/
 if(cp=='game=ageofwar2'){
   console.log("Loading Age of War 2")
   document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="https://cdn.rawgit.com/kres0345/swfgames/91b55565/age-of-war-2-5933.swf"></object>'
@@ -241,13 +242,13 @@ if(cp=='game=learntofly'){
 if(cp=='game=thumbfighter'){
   console.log("Loading Thumb Fighter")
   document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="https://cdn.rawgit.com/kres0345/swfgames/b2c82b62/thumb_fighter.swf"></object>'
-  document.getElementById('description').innerHTML = "<p><b>This game is made by Someone.</b> Description.</p>"
+  document.getElementById('description').innerHTML = "<p><b>This game is made by an unknown person.</b> 'Thumb Fighter is a simple one button fighting game, full of action and humour. You can have fun playing against the computer, a friend, a son, a mother! Everybody can play. It's a great party game!' - Y8.com.</p>"
   document.getElementById('title').innerHTML = '<h1>Thumb Fighter</h1>'
 	document.getElementById('tabtitle').innerHTML = "Thumb Fighter - FrostBurn Games"
   var runcorrect = true
 }//
 if(cp=='game=template'){
-  console.log("Loading Dolphin Olympics 2")
+  console.log("Loading Template")
   document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="games/swf/dolphin-olympics-2-2019.swf"></object>'
   document.getElementById('description').innerHTML = "<p><b>This game is made by An Awesome Person.</b> Description.</p>"
   document.getElementById('title').innerHTML = '<h1>Template</h1>'

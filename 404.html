@@ -1,5 +1,15 @@
-permalink: /404.html
+<!-- permalink: /404.html -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="css/button.css">
+<link rel="stylesheet" type="text/css" href="css/footer.css">
+<link rel="stylesheet" type="text/css" href="css/headermenu.css">
 <style>
+div.sticky {
+  position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+}
 p {
   text-align: center;
   font-family: sans-serif;
@@ -8,18 +18,49 @@ h1 {
   text-align: center;
   font-family: sans-serif;
 }
-#returntomenu {
-  text-align:center;
+#Errorblock {
+  border:5px solid black;
+  border-radius: 5px;
+  background-color: white;
+  margin: auto;
+}
+body {
+  background-color: #277979;
+  text-align: center;
+  max-width: 1200px;
+  padding: 10px;
+  margin: auto;
 }
 </style>
 <html>
   <head>
-    <h1>The page you are looking for is unavailable</h1>
-    <input id="returntomenu" type="button" onclick="window.location = href" value="Return to homepage" />
+    <title>404 page - Frostburn-Games</title>
+    <link rel="icon" href="logoVersion4.png" type="image/x-icon"/>
   </head>
   <body>
-    <title>404 page - Frostburn-Games</title>
+    <div class="sticky" id="header"> <!-- NOTE !!!HEADER HERE!!! (I keep forgetting where I place it) -->
+      <input type="image" src="logoVersion3.png" onclick="window.location.href = 'index.html';" style="width:60px;height:60px;float: left" />
+      <p><b>Welcome to FrostBurn Games</b></p>
+      <ul style="font-family: sans-serif;">
+        <li><a class="active" href="index.html">Frontpage</a></li>
+        <li><a href="#surveyhref"><i>Survey</i></a></li>
+        <li><a href="slidez.html">Slidez</a></li>
+        <li><a href="https://github.com/kres0345/FrostBurn-Games/issues/new" target="_blank">Report a bug</a></li>
+        <!-- <li><a href="account.html">Local-settings</a></li> -->
+        <!-- <li><a href="gamelist.html">Gamelist</a></li> -->
+      </ul>
+    </div><br>
+    <div id="Errorblock">
+      <h1>404</h1>
+      <p>Well, all pages gotta have em, I am sincerely sorry if this page is disturbing to you.</p>
+      <p>
+      <input class="button" type="button" onclick="window.location.href = 'index.html';" value="Return to homepage" />
+    </div>
+    <div id="footer"> <!-- !!!FOOTER HERE!!! (I keep forgetting where I place it) -->
+      <p><b><a href="https://github.com/kres0345/FrostBurn-Games/issues/new">Request a game?</a></b>, <b><a href="https://github.com/kres0345/FrostBurn-Games/issues/new">Report an error</a></b> or <b><a href="https://github.com/kres0345/FrostBurn-Games/projects/1">Follow development</a></b> website made by <a href="https://twitter.com/Kres0345?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">@Kres0345</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>, <i>Tip of the load:</i></p><p id="randomtip"></p>
+    </div>
   </body>
   <script>
   </script>
+  <script type="text/javascript" src="js/randomtip.js"></script>
 </html>
