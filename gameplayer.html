@@ -106,7 +106,7 @@ body {
   <input class="button" id="closefullscreen" type="button" value="Exit Fullscreen" onclick="closefullscreen();" />
   <input class="button" id="clearbackground" type="button" value="Clear BG" onclick="clearbackground();" />
   </div>
-  <object><param /></object>
+  <!--<object><param /></object>-->
   <div id="gameplayer"></div> <!-- This is the function that gets changed with url parameter -->
 
   <body>
@@ -166,6 +166,17 @@ body {
         console.log(document.cookie);
     }
     }
+    // cookie
+    var cookie = document.cookie.split(';');
+    var i = 0;
+    while (cookie.length > i) {
+      if(cookie[i] == "headerdisabled=true"){
+        var x = document.getElementById("header");
+        x.style.display = "none";
+        console.log("Header disabled")
+      }
+    }
+    //cookie
     function returngl() {
       window.location.href = "gamelist.html";
     }
