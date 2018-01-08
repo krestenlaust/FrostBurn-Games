@@ -169,14 +169,14 @@ body {
     // cookie
     var cookie = document.cookie.split(';');
     var i = 0;
-    while (cookie.length > i) {
+    while (cookie.length >= i) {
       if(cookie[i] == "headerdisabled=true"){
         var x = document.getElementById("header");
         x.style.display = "none";
         console.log("Header disabled")
       }
       console.log(cookie[i])
-      var i += 1;
+      i++;
     }
     //cookie
     function returngl() {
