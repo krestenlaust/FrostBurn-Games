@@ -22,6 +22,9 @@ p {
 h1 {
   font-family: sans-serif;
 }
+body {
+  background-color: #277979; /* #33cccc Cyan color */
+}
 /*
 #header {
   margin-left: 5%;
@@ -55,7 +58,7 @@ h1 {
   position: absolute;
   margin-left: 17.1%;
 }
-#gameplayer, #title, #toolbar, #toolbarbelow{
+#gameplayer, #title, #toolbarbelow{
   text-align: center;
 }
 /*
@@ -71,7 +74,6 @@ h1 {
       <p style=""><b>Welcome to FrostBurn Games</b></p>
       <ul style="font-family: sans-serif;">
         <li><a href="index.html">Frontpage</a></li>
-        <!-- <li><a href="#surveyhref"><i>Survey</i></a></li> -->
         <li><a href="slidez.html">Slidez</a></li>
         <li><a href="https://github.com/kres0345/FrostBurn-Games/issues/new" target="_blank">Report a bug</a></li>
         <!-- <li><a href="account.html">Local-settings</a></li> -->
@@ -179,7 +181,7 @@ h1 {
       //document.getElementById('clearbackground').style.visibility = 'visible'; //Shows the "clear bg" button
     }
     function closefullscreen() {
-      gameplayer.style.cssText = "text-align: left;" //transform:scale(1.0);
+      gameplayer.style.cssText = "text-align: center;" //transform:scale(1.0);
       document.body.style.backgroundColor = ""
       var x = document.getElementById("header");
       x.style.display = "block";
