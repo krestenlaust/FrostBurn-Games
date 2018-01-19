@@ -1,6 +1,6 @@
 if(cp=='game=strikeforceheroes'){
 	console.log("Loading Strike Force Heroes");
-	document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="https://cdn.rawgit.com/kres0345/swfgames/3f80361f/strikeforceheroes.swf"></object>'
+	document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="https://cdn.rawgit.com/kres0345/swfgames/19ca5a3d/strike-force-heroes-1.swf"></object>'
 	document.getElementById('description').innerHTML = "<p><b>This game is made by JuiceTin.</b> This game forms childhoods. It's amazing.</p>"
 	document.getElementById('title').innerHTML = '<h1>Strike Force Heroes</h1>'
 	document.getElementById('tabtitle').innerHTML = "Strike Force Heroes - FrostBurn Games"
@@ -8,7 +8,7 @@ if(cp=='game=strikeforceheroes'){
 }
 if(cp=='game=strikeforceheroes2'){
 	console.log("Loading Strike Force Heroes 2")
-	document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="https://cdn.rawgit.com/kres0345/swfgames/3f80361f/strike-force-heroes-13367.swf"></object>'
+	document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="https://cdn.rawgit.com/kres0345/swfgames/19ca5a3d/strike-force-heroes-2.swf"></object>'
 	document.getElementById('title').innerHTML = '<h1>Strike Force Heroes 2</h1>'
 	document.getElementById('description').innerHTML = '<p><b>This game is made by JuiceTin.</b> This game is also a childhood forming game.</p>'
 	document.getElementById('tabtitle').innerHTML = "Strike Force Heroes 2 - FrostBurn Games"
@@ -16,7 +16,7 @@ if(cp=='game=strikeforceheroes2'){
 }
 if(cp=='game=strikeforceheroes3'){
 	console.log("Loading Strike Force Heroes 3")
-	document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="https://cdn.rawgit.com/kres0345/swfgames/3f80361f/strike-force-heroes--17706.swf"></object>'
+	document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="https://cdn.rawgit.com/kres0345/swfgames/19ca5a3d/strike-force-heroes-3.swf"></object>'
 	document.getElementById('description').innerHTML = '<p><b>This game is made by JuiceTin.</b> This game is simply the last game. The last games are not always as good as the first 1.</p>'
 	document.getElementById('title').innerHTML = '<h1>Strike Force Heroes 3</h1>'
 	document.getElementById('tabtitle').innerHTML = "Strike Force Heroes 3 - FrostBurn Games"
@@ -87,8 +87,8 @@ if(cp=='game=zombotron'){
 	var runcorrect = true
 }
 if(cp=='game=zombotron2'){
-  console.log("Loading Zombotron 2")
-  document.getElementById('gameplayer').innerHTML = '<object width="650" height="480" data="https://cdn.rawgit.com/kres0345/swfgames/86bd817f/zombotron-2-13457.swf"></object>'
+  console.log("Loading Zombotron 2")//old res 650x480
+  document.getElementById('gameplayer').innerHTML = '<object width="640" height="480" data="https://cdn.rawgit.com/kres0345/swfgames/86bd817f/zombotron-2-13457.swf"></object>'
   document.getElementById('description').innerHTML = "<p><b>This game is made by AntKarlov.</b> A game requested by a friend.</p>"
   document.getElementById('title').innerHTML = '<h1>Zombotron 2</h1>'
 	document.getElementById('tabtitle').innerHTML = "Zombotron 2 - FrostBurn Games"
@@ -112,7 +112,7 @@ if(cp=='game=hauntthehouse'){
 }
 if(cp=='game=ageofwar'){
   console.log("Loading Age of War")
-  document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="games/swf/age-of-war-616.swf"></object>'
+  document.getElementById('gameplayer').innerHTML = '<object width="800" height="565" data="games/swf/age-of-war-616.swf"></object>'
   document.getElementById('description').innerHTML = "<p><b>This game is made by louissi.</b> This game is about defending your base while attacking the enemy base and you slowly advance in history.</p>"
   document.getElementById('title').innerHTML = '<h1>Age of War</h1>'
 	document.getElementById('tabtitle').innerHTML = "Age of War - FrostBurn Games"
@@ -193,7 +193,7 @@ if(cp=='game=armormayhem'){
 }*/
 if(cp=='game=ageofwar2'){
   console.log("Loading Age of War 2")
-  document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="https://cdn.rawgit.com/kres0345/swfgames/91b55565/age-of-war-2-5933.swf"></object>'
+  document.getElementById('gameplayer').innerHTML = '<object width="800" height="533" data="https://cdn.rawgit.com/kres0345/swfgames/7dcef7b2/age-of-war-2.swf"></object>'
   document.getElementById('description').innerHTML = "<p><b>This game is made by louissi.</b> This is a great game.</p>"
   document.getElementById('title').innerHTML = '<h1>Age of War 2</h1>'
 	document.getElementById('tabtitle').innerHTML = "Age of War 2 - FrostBurn Games"
