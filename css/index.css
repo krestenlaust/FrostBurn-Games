@@ -1,0 +1,91 @@
+div.sticky {
+  position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+}
+p {
+  font-family: sans-serif;
+}
+h1 {
+  font-family: sans-serif;
+}
+.tgimages {
+  border:1px solid #021a40;
+  border-radius: 6%;
+  cursor: pointer;
+}
+#topgames {
+  border:5px solid green;
+  border-radius: 6px;
+  padding: 10px;
+  background-color: white; /* NOTE: bgcolor */
+}
+#slidezlogo {
+  border-radius: 6%;
+}
+#news {
+  border:5px solid red;
+  border-radius: 6px;
+  padding: 10px;
+  padding-top: 1px;
+  text-align: center;
+}
+#interest {
+  border:5px solid purple;
+  border-radius: 6px;
+  background-color: white; /* NOTE: bgcolor */
+}
+#slidez {
+  border:5px solid green;
+  border-radius: 6px;
+  background-color: white; /* NOTE: bgcolor */
+}
+#donator {
+  border:5px solid yellow;
+  border-radius: 6px;
+  background-color: white; /* NOTE: bgcolor */
+}
+.donating {
+  margin: 5px;
+}
+
+.games {
+  float: left;
+  width: 33.33%;
+  /*width: 25%; */
+  padding: 15px;
+}
+* {
+    box-sizing: border-box;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/*
+@media (max-width:600px) {
+    .games {
+        width: 100%;
+    }
+}*/
+
+/* Side blank bars */
+body {
+  /border: solid blue;
+  /border-width: 5px;
+  /border-radius: 6px;
+  /box-sizing: border-box;
+  background-color: #277979; /* #33cccc Cyan color */
+}
+.content {
+  max-width: 1200px;
+  /background: white;
+  padding: 10px;
+  margin: auto;
+}
+@media (max-width:600px) { /* Resizes the rows depending on screen size(mobile support) */
+    .games {
+        width: 100%;
+    }
+}

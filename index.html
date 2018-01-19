@@ -6,11 +6,8 @@
 <meta name="description" content="Play free online games at Frostburn-Games.com, a wide array of games to choose from. We are also a game producing company working on our first game: Slidez." />
 <meta name="google" content="nositelinkssearchbox" />
 <META name="keywords" content="frostburngames, frostburn-games, fbg, frostburn-games.com, slidez, slidesgame, fbg slidez, slidez fbg, slidez frostburn-games, frostburn-games slidez, slides, frostburngames.com, frostburngames.tk">
-<link rel="stylesheet" type="text/css" href="css/headermenu.css">
-<link rel="stylesheet" type="text/css" href="css/button.css">
-<link rel="stylesheet" type="text/css" href="css/buttontg.css">
-<link rel="stylesheet" type="text/css" href="css/footer.css">
-<style>
+
+<!--<style>
 div.sticky {
   position: -webkit-sticky;
 	position: sticky;
@@ -102,18 +99,17 @@ body {
         width: 100%;
     }
 }
-</style>
+</style>-->
 
+<!--  my try to redirect mobile users
 <script type="text/javascript">
-<!--
-if (screen.width <= 699) {
+if (screen.width <= 600) {
   if (window.location.href != "https://kres0345.github.io/FrostBurn-Games/"){
     document.location = "https://kres0345.github.io/FrostBurn-Games/";
   }
 
 }
-//-->
-</script>
+</script>-->
 
 <html>
   <link rel="icon" href="logoVersion4.png" type="image/x-icon"/>
@@ -143,6 +139,11 @@ if (screen.width <= 699) {
   </script>
   <!-- NOTE: Cookie banner ends here -->
   <head>
+    <link rel="stylesheet" type="text/css" href="css/headermenu.css">
+    <link rel="stylesheet" type="text/css" href="css/button.css">
+    <link rel="stylesheet" type="text/css" href="css/buttontg.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
     <meta name="google-site-verification" content="_gaE2YYlwTyuDMz1lf4s52xGWz1IaZNEGllXSC7rNxg" /> <!-- Website verfication -->
     <div class="sticky" id="header"> <!-- NOTE !!!HEADER HERE!!! (I keep forgetting where I place it) -->
       <input type="image" src="logoVersion4.png" onclick="window.location.href = "index.html";" style="width:60px;height:60px;float: left" />
@@ -166,7 +167,7 @@ if (screen.width <= 699) {
     console.log("Header disabled")
   }
   </script>
-  <noscript>Sorry, your browser does not support JavaScript, please use a suitable browser instead like Chrome</noscript>
+  <noscript>Sorry, your browser does not support JavaScript, please use a suitable browser instead like Chrome or Firefox.</noscript>
   <body class="content">
     <br>
     <input class="button" id="gamelistbutton" type="button" value="Gamelist" onclick="gamelist();" />
@@ -175,13 +176,13 @@ if (screen.width <= 699) {
     <input id="audioplayerbtn" class="button" type="button" value="Start audio player" onclick="popitup2();" />
     <!--<input class="button" type="button" value="Basic View" onclick="basic();" />-->
     <br><br>
-    <!-- <input class="button" id="enablessl" type="button" value="Enable SSL(To enable audioplayer)" onclick="window.location.href = "http://ssl.FrostBurn-Games.com";" target="_top"> -->
-    <a style="font-family: sans-serif;" class="button" href="http://ssl.FrostBurn-Games.com" target="_top">Enable SSL(To enable audioplayer)</a>
+    <a style="font-family: sans-serif;" class="button" href="http://ssl.FrostBurn-Games.com" target="_top">Enable SSL(Gives best mobile experince)</a>
     <div>
-      <p>Go ahead, find a game.</p>
+      <!--<p>Go ahead, find a game.</p>-->
+      <br>
     </div>
     <div id="topgames">
-      <p><b>Top games:</b></p>
+      <p style="font-size:120%;"><b>Games:</b></p>
       <!--<p>Don't spam the "Row view" button, as that is is in beta currently and will slow it down.</p>-->
       <!--<input type="button" class="button" value="Row view" onclick="rowview();" />-->
       <!--<input type="button" class="button" value="column view" onclick="columnview();" />-->
@@ -224,9 +225,6 @@ if (screen.width <= 699) {
         <div class="games"><p><image class="tgimages" src="images/linerider.png" alt="Line Rider" style="width:65px;height:65px" onclick="window.location.href = 'gameplayer.html?game=linerider';" /><input class="buttontg" type="button" value="Play Game" onclick="window.location.href = 'gameplayer.html?game=linerider';"> Line Rider</p></div>
       </div>
     </div>
-    <!--<div id="interest">
-      <script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/1173_RC01/embed_loader.js"></script> <script type="text/javascript"> trends.embed.renderExploreWidget("TIMESERIES", {"comparisonItem":[{"keyword":"frostburn-games","geo":"","time":"today 1-m"}],"category":8,"property":""}, {"exploreQuery":"cat=8&date=today 1-m&q=frostburn-games","guestPath":"https://trends.google.com:443/trends/embed/"}); </script>
-    </div>-->
     <div id="slidez" style="text-align:center;">
       <h1>Slidez - by Frostburn-games </h1>
       This is our first game,<br>
