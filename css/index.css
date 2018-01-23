@@ -13,6 +13,10 @@ h1 {
   border:1px solid #021a40;
   border-radius: 6%;
   cursor: pointer;
+  transition: all .2s;
+}
+.tgimages:hover {
+  border-radius: 20%;
 }
 #topgames {
   border:5px solid green;

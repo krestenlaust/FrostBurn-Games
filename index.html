@@ -172,15 +172,15 @@ if (screen.width <= 600) {
     	var tmp = newwindow2.document;
     	tmp.write('<html><head><title>FrostBurn Audio player</title>');
     	tmp.write('<link rel="stylesheet" href="js.css">');
-      tmp.write('<link rel="stylesheet" type="text/css" href="css/button.css">')
+      tmp.write('<link rel="stylesheet" type="text/css" href="css/button.css">');
     	tmp.write('</head><body><p style="font-family: sans-serif;">This is FrostBurn audio player.</p>');
     	tmp.write('<p style="font-family: sans-serif;">You can minimize the window to keep focus on your game :-D or:</p>');
       //tmp.write('<p style="font-family: sans-serif;"><a href="javascript:self.close()">Exit</a> the popup.</p>');
       tmp.write('<input class="button" id="gamelistbutton" type="button" value="Exit" onclick="javascript:self.close();" />');
     	tmp.write('<audio controls>');
-    	tmp.write('<source src="audio/StrikeForceHeroesOSTMainMenuTheme.mp3" type="audio/mpeg">')
-    	tmp.write('<source src="audio/OriginalGhostBustersThemeSong.mp3" type="audio/mpeg">')
-    	tmp.write('</audio>')
+    	tmp.write('<source src="audio/StrikeForceHeroesOSTMainMenuTheme.mp3" type="audio/mpeg">');
+    	tmp.write('<source src="audio/OriginalGhostBustersThemeSong.mp3" type="audio/mpeg">');
+    	tmp.write('</audio>');
     	tmp.write('</body></html>');
     	tmp.close();
     }
