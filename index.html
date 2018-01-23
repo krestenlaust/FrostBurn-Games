@@ -28,7 +28,7 @@ if (screen.width <= 600) {
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <meta name="google-site-verification" content="_gaE2YYlwTyuDMz1lf4s52xGWz1IaZNEGllXSC7rNxg" /> <!-- Website verfication -->
     <div class="sticky" id="header"> <!-- NOTE !!!HEADER HERE!!! (I keep forgetting where I place it) -->
-      <input type="image" src="logoVersion4.png" onclick="window.location.href = "index.html";" style="width:60px;height:60px;float: left" />
+      <input type="image" src="logoVersion4.png" onclick='window.location.href = "index.html";' style="width:60px;height:60px;float:left" />
       <p style=""><b>Welcome to FrostBurn Games</b></p>
       <ul style="font-family: sans-serif;">
         <li><a class="active" href="index.html">Frontpage</a></li>
@@ -63,6 +63,8 @@ if (screen.width <= 600) {
       <!--<p>Go ahead, find a game.</p>-->
       <br>
     </div>
+    <!--<input type="text" name="search" id="searchbar" placeholder="A really great game...">-->
+    <br><br>
     <div id="topgames">
       <p style="font-size:120%;"><b>Games:</b></p>
       <!--<p>Don't spam the "Row view" button, as that is is in beta currently and will slow it down.</p>-->
@@ -128,6 +130,7 @@ if (screen.width <= 600) {
     	<p><b><a href="https://github.com/kres0345/FrostBurn-Games/issues/new" target="_blank">Request a game?</a></b> or <b><a href="https://github.com/kres0345/FrostBurn-Games/issues/new" target="_blank">Report an error</a></b> website made by <a href="https://twitter.com/Kres0345">@Kres0345</a>, <i>Tip of the load:</i></p><p id="randomtip"></p>
     </div>
     <script type="text/javascript" src="js/randomtip.js"></script>
+    <!--<script type="text/javascript" src="js/searchbar.js"></script>-->
     <script>
     function toggleheader() {
     var x = document.getElementById("header");
