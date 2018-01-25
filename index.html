@@ -72,7 +72,7 @@ if (screen.width <= 600) {
       <!--<input type="button" class="button" value="column view" onclick="columnview();" />-->
       <div class="row">
         <div class="games"><p class="gamesborder"><image class="tgimages" src="images/zombotron2.png" alt="zombotron" style="width:65px;height:65px" onclick="window.location.href = 'gameplayer.html?game=zombotron2';" /><input class="buttontg" type="button" value="Play Game" onclick="window.location.href = 'gameplayer.html?game=zombotron2';"> Zombotron 2</p></div>
-        <div class="games"><p><image class="tgimages" src="images/strikeforceheroes.png" alt="strike force heroes" style="width:65px;height:65px" onclick="window.location.href = 'gameplayer.html?game=strikeforceheroes';" /><input class="buttontg" type="button" value="Play Game" onclick="window.location.href = 'gameplayer.html?game=strikeforceheroes';"> Strike Force Heroes</p></div>
+        <div class="games"><p><image class="tgimages" onmouseover="onhovervideo(this);" onmouseout="removevideo(this);" src="images/strikeforceheroes.png" alt="strike force heroes" style="width:65px;height:65px" onclick="window.location.href = 'gameplayer.html?game=strikeforceheroes';" /><input class="buttontg" type="button" value="Play Game" onclick="window.location.href = 'gameplayer.html?game=strikeforceheroes';"> Strike Force Heroes</p></div>
         <div class="games"><p><image class="tgimages" src="images/stickfigurebadminton2.png" alt="stick figure badminton 2" style="width:65px;height:65px" onclick="window.location.href = 'gameplayer.html?game=stickfigurebadminton2';" /><input class="buttontg" type="button" value="Play Game" onclick="window.location.href = 'gameplayer.html?game=stickfigurebadminton2';"> Stick Figure Badminton 2</p></div>
         <div class="games"><p><image class="tgimages" src="images/plazmaburst2.png" alt="Plazma Burst 2" style="width:65px;height:65px" onclick="window.location.href = 'gameplayer.html?game=plazmaburst2';" /><input class="buttontg" type="button" value="Play Game" onclick="window.location.href = 'gameplayer.html?game=plazmaburst2';"> Plazma Burst 2</p></div>
         <div class="games"><p><image class="tgimages" src="images/strikeforceheroes2.png" alt="Strike Force Heroes 2" style="width:65px;height:65px" onclick="window.location.href = 'gameplayer.html?game=strikeforceheroes2';" /><input class="buttontg" type="button" value="Play Game" onclick="window.location.href = 'gameplayer.html?game=strikeforceheroes2';"> Strike Force Heroes 2</p></div>
@@ -204,6 +204,14 @@ if (screen.width <= 600) {
       var documenthtml01 = document.documentElement.innerHTML;
       console.log(documenthtml01);
       document.write(documenthtml01+'\n<link rel="stylesheet" type="text/css" href="css/columnview.css">');
+    }
+    function onhovervideo(x) {
+      if (x.innerHTML.indexOf("<iframe width") >= 0){
+        x.innerHTML = x.innerHTML, '<iframe width="560" height="315" src="https://www.youtube.com/embed/PPB5SBtQnDE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>'
+      }
+    }
+    function removevideo(x) {
+
     }
     </script>
   </body>
