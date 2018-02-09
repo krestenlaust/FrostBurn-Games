@@ -247,18 +247,10 @@ if(cp=='game=thumbfighter'){
 	document.getElementById('tabtitle').innerHTML = "Thumb Fighter - FrostBurn Games"
   var runcorrect = true
 }//
-if(cp=='game=template'){
-  console.log("Loading Template")
-  document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="games/swf/dolphin-olympics-2-2019.swf"></object>'
-  document.getElementById('description').innerHTML = "<p><b>This game is made by An Awesome Person.</b> Description.</p>"
-  document.getElementById('title').innerHTML = '<h1>Template</h1>'
-	document.getElementById('tabtitle').innerHTML = "Template - FrostBurn Games"
-  var runcorrect = true
-}
 if(cp=='game=boxhead2'){
   console.log("Loading Box Head")
   document.getElementById('gameplayer').innerHTML = '<object width="645" height="485" data="https://cdn.rawgit.com/kres0345/swfgames/1daec3ae/boxhead_2play.swf"></object>'
-  document.getElementById('description').innerHTML = "<p><b>This game is made by An Awesome Person.</b> Description.</p>"
+  document.getElementById('description').innerHTML = "<p><b>This game is made by An Awesome Person.</b> Shoot enemies.</p>"
   document.getElementById('title').innerHTML = '<h1>Boxhead 2</h1>'
 	document.getElementById('tabtitle').innerHTML = "Boxhead 2 - FrostBurn Games"
   var runcorrect = true
@@ -272,11 +264,27 @@ if(cp=='game=happywheels'){
   var runcorrect = true
 }
 if(cp=='game=linerider'){
-  console.log("Loading Happy Wheels")
+  console.log("Loading Line Rider")
   document.getElementById('gameplayer').innerHTML = '<object width="645" height="485" data="https://cdn.rawgit.com/kres0345/swfgames/24c23ce3/linerider1.swf"></object>'
-  document.getElementById('description').innerHTML = "<p><b>This game is made by An Awesome Person.</b> Description.</p>"
+  document.getElementById('description').innerHTML = "<p><b>This game is made by An Awesome Person.</b> The title says it.</p>"
   document.getElementById('title').innerHTML = '<h1>Line Rider</h1>'
 	document.getElementById('tabtitle').innerHTML = "Line Rider - FrostBurn Games"
+  var runcorrect = true
+}//
+if(cp=='game=electricman2'){
+  console.log("Loading ElectricMan 2")
+  document.getElementById('gameplayer').innerHTML = '<object width="800" height="500" data="https://cdn.rawgit.com/kres0345/swfgames/3816f44b/electricman2.swf"></object>'
+  document.getElementById('description').innerHTML = "<p><b>This game is made by DX-Interactive.</b> This is a fighting game where you fight your way up to a larger enemy.</p>"
+  document.getElementById('title').innerHTML = '<h1>ElectricMan 2</h1>'
+	document.getElementById('tabtitle').innerHTML = "ElectricMan 2 - FrostBurn Games"
+  var runcorrect = true
+}
+if(cp=='game=template'){
+  console.log("Loading Template")
+  document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="games/swf/dolphin-olympics-2-2019.swf"></object>'
+  document.getElementById('description').innerHTML = "<p><b>This game is made by An Awesome Person.</b> Description.</p>"
+  document.getElementById('title').innerHTML = '<h1>Template</h1>'
+	document.getElementById('tabtitle').innerHTML = "Template - FrostBurn Games"
   var runcorrect = true
 }
 else{
