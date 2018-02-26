@@ -115,6 +115,7 @@ body {
     <input class="button" id="return to gamelist" type="button" value="Return to Gamelist" onclick="returngl();" />
     <input class="button" id="toggle header" type="button" value="Toggle Header" onclick="toggleheader();" />
     <input class="button" id="fullscreen" type="button" value="Full-Screen" onclick="fullscreen();" />
+    <!--<input class="button" id="gameclient" type="button" value="Open in client" onclick="openclient();" />-->
     <div id=description></div>
 
     <!-- frostburn-games.disqus.com comment section Start -->
@@ -223,6 +224,10 @@ body {
     var url1 = window.location.href
     var res = url1.split("?");
     var cp = res[1];
+    function openclient(){
+      window.open("frostclient:"+cp)
+    }
+
   </script>
   <script src="js/gameplayer.js"></script>
   <script> //Flash detection script by dcicale: https://gist.github.com/dciccale/1116643

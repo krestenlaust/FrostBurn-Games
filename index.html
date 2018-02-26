@@ -6,20 +6,19 @@ if (screen.width <= 600) {
   if (window.location.href != "https://kres0345.github.io/FrostBurn-Games/"){
     document.location = "https://kres0345.github.io/FrostBurn-Games/";
   }
-
 }
 </script>-->
 
 <html>
 
   <head>
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!--<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <script>
       (adsbygoogle = window.adsbygoogle || []).push({
         google_ad_client: "ca-pub-6044149035666154",
         enable_page_level_ads: true
       });
-    </script>
+    </script>-->
     <link rel="icon" href="logoVersion4.png" type="image/x-icon"/>
     <title>FrostBurn Games</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -136,7 +135,7 @@ if (screen.width <= 600) {
       <p class="donating">Mathias 0.237 USD (1,5 DKK)</p>
     </div>
     <div id="footer"> <!-- !!!FOOTER HERE!!! (I keep forgetting where I place it) -->
-    	<p><b><a href="https://github.com/kres0345/FrostBurn-Games/issues/new" target="_blank">Request a game?</a></b> or <b><a href="https://github.com/kres0345/FrostBurn-Games/issues/new" target="_blank">Report an error</a></b> website made by <a href="https://twitter.com/Kres0345">@Kres0345</a>, <i>Tip of the load:</i></p><p id="randomtip"></p>
+    	<p><b><a href="https://github.com/kres0345/FrostBurn-Games/issues/new" target="_blank">Request a game?</a></b> or <b><a href="https://github.com/kres0345/FrostBurn-Games/issues/new" target="_blank">Report an error</a></b> website made by <a href="https://twitter.com/Kres0345">@Kres0345</a>, email: frostburn-games.com@gmail.com <i>Tip of the load:</i></p><p id="randomtip"></p>
     </div>
     <script type="text/javascript" src="js/randomtip.js"></script>
     <!--<script type="text/javascript" src="js/searchbar.js"></script>-->
@@ -193,35 +192,6 @@ if (screen.width <= 600) {
     	tmp.write('</body></html>');
     	tmp.close();
     }
-    function basic() {
-      //console.log($('html').text());
-      var documenthtml = document.body.innerHTML;
-      //var documenttext = document.body.innertext;
-      console.log(documenthtml);
-      //console.log(documenttext);
-      document.write(documenthtml+'\n<link rel="stylesheet" type="text/css" href="css/rowview.css">');
-      //console.log($("games").css("width"););
-    }
-    function rowview() {
-      //console.log($('html').text());
-      var documenthtml01 = document.documentElement.innerHTML;
-      console.log(documenthtml01);
-      document.write(documenthtml01+'\n<link rel="stylesheet" type="text/css" href="css/rowview.css">');
-      //console.log($("games").css("width"););
-    }
-    function columnview() {
-      var documenthtml01 = document.documentElement.innerHTML;
-      console.log(documenthtml01);
-      document.write(documenthtml01+'\n<link rel="stylesheet" type="text/css" href="css/columnview.css">');
-    }
-    function onhovervideo(x) {
-      if (x.innerHTML.indexOf("<iframe width") >= 0){
-        x.innerHTML = x.innerHTML, '<iframe width="560" height="315" src="https://www.youtube.com/embed/PPB5SBtQnDE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>'
-      }
-    }
-    function removevideo(x) {
-
-    }
     </script>
   </body>
 </html>
@@ -268,6 +238,39 @@ window.cookieconsent.initialise({
 </script>
 <!-- NOTE: Cookie banner ends here -->
 
+<!--
+/*
+function onhovervideo(x) {
+  if (x.innerHTML.indexOf("<iframe width") >= 0){
+    x.innerHTML = x.innerHTML, '<iframe width="560" height="315" src="https://www.youtube.com/embed/PPB5SBtQnDE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>'
+  }
+}
+function removevideo(x) {
+
+}*/
+function rowview() {
+  //console.log($('html').text());
+  var documenthtml01 = document.documentElement.innerHTML;
+  console.log(documenthtml01);
+  document.write(documenthtml01+'\n<link rel="stylesheet" type="text/css" href="css/rowview.css">');
+  //console.log($("games").css("width"););
+}
+function columnview() {
+  var documenthtml01 = document.documentElement.innerHTML;
+  console.log(documenthtml01);
+  document.write(documenthtml01+'\n<link rel="stylesheet" type="text/css" href="css/columnview.css">');
+}*/
+
+function basic() {
+  //console.log($('html').text());
+  var documenthtml = document.body.innerHTML;
+  //var documenttext = document.body.innertext;
+  console.log(documenthtml);
+  //console.log(documenttext);
+  document.write(documenthtml+'\n<link rel="stylesheet" type="text/css" href="css/rowview.css">');
+  //console.log($("games").css("width"););
+}
+-->
 
 <!--
 Secret messeage:
