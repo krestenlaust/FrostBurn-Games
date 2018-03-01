@@ -217,7 +217,7 @@ if(cp=='game=superstacker2'){
 }//bubble-tanks-2-1920.swf
 if(cp=='game=bubbletanks2'){
   console.log("Loading Bubble Tanks 2")
-  document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="https://cdn.rawgit.com/kres0345/swfgames/f12d948d/super-stacker-2-3141.swf"></object>'
+  document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="https://cdn.rawgit.com/kres0345/swfgames/70251ce7/bubble-tanks-2-1920.swf"></object>'
   document.getElementById('description').innerHTML = "<p><b>This game is made by HeroInteractive.</b> Description.</p>"
   document.getElementById('title').innerHTML = '<h1>Bubble Tanks 2</h1>'
 	document.getElementById('tabtitle').innerHTML = "Bubble Tanks 2 - FrostBurn Games"
